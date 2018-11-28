@@ -48,49 +48,56 @@
   border-right: 1px solid white;
 }
 
-
-#album {
-  background-color: rgba(255, 255, 255, 0.8);
-  position: absolute;
-  border: 2px solid black;
-  width: 400px;
-  height: 1480px;
-  text-align: center;
-  left: 40px;
-  top: 150px;
-
-}
-
-#album h1 {
-  color: black;
-  text-decoration: underline;
-  font-size:2em;
-  font-family: Inconsolata;
-}
-
-#album img {
-  width: 350px;
-  height: auto;
-}
-
-#album p{
-  font-size:1.5em;
-  font-family: Inconsolata;
-  font-weight: bold;
-}
-
-#album p:last-child {
-  font-size: 0.8em;
-  text-decoration: underline;
-}
-
 .banner {
-    width: 80%;
-    height: auto;
+  width:100%;
+  position: relative;
+  top:120px;
+}
+
+.mySlides {
+    display: none;
     position: relative;
-    top: 120px;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
     left: 50%;
     transform: translate(-50%, 0);
+}
+
+.displayleft {
+  position: absolute;
+  color: white;
+  border: none;
+  font-size: 2.0em;
+  left: 3%;
+  top: 50%;
+  margin: 0px;
+  padding: 0px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.displayleft:hover {
+  color: black;
+  text-shadow: 1px 1px 2px white;
+  cursor: pointer;
+}
+
+.displayright {
+  position: absolute;
+  color: white;
+  border: none;
+  font-size: 2.0em;
+  right: 3%;
+  top: 50%;
+  margin: 0px;
+  padding: 0px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.displayright:hover {
+  color: black;
+  text-shadow: 1px 1px 2px white;
+  cursor: pointer;
 }
 
 #latestnews{
@@ -130,12 +137,12 @@
 }
 
 #officialmerch {
-  position: absolute;
+  position: relative;
   text-align: center;
-  top: 1100px;
+  top: 117px;
   left: 50%;
   transform: translate(-50%,0);
-  width: 100%;
+  max-width: 100%;
   height: 529px;
   border:2px solid black;
   background-color: rgb(255,255,255,0.8);
@@ -151,7 +158,7 @@
 
 #officialmerch .product {
   float: left;
-  margin: 0 10px;
+  margin: 0 1.1em;
 }
 
 #officialmerch .product img {
@@ -167,20 +174,21 @@
 }
 
 #officialmerch .seemore{
-  display:inline;
-  position: relative;
+  display: inline;
+  position: absolute;
   text-align:center;
   font-size: 1em;
   font-family: Inconsolata;
   text-decoration: underline;
-  top: 30px;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%,0);
 }
 
 #officialvideo {
-  position: absolute;
-  left: 40px;
-  top: 1660px;
-  width: 1842px;
+  position: relative;
+  top: 200px;
+  max-width: 100%;
   height: 640px;
   border: 2px solid black;
   background-color: rgb(255,255,255,0.8);
@@ -204,7 +212,7 @@
 
 #footer {
   position: relative;
-  width: 100%;
+  max-width: 100%;
   height: 300px;
   top: 2330px;
   border: 2px solid black;
@@ -296,7 +304,8 @@
 
 body {
   position: relative;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   padding:0px;
   margin: 0px;
   z-index:1;
