@@ -7,3 +7,13 @@
   font-family: "InconsolataBold";
   src: url(fonts/Inconsolata-Bold.ttf);
 }
+
+@font-face {
+  font-family: "GothamBook";
+  src: url(fonts/Gotham-Book.otf);
+}
+
+@font-face {
+  font-family: "GothamBookItalic";
+  src: url(fonts/Gotham-BookItalic.otf);
+}

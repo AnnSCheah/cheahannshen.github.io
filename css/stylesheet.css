@@ -3,7 +3,7 @@
   padding:10px;
   margin:0;
   width:100%;
-  height:100px;
+  height:32px;
   z-index: 10;
   position: fixed;
 }
@@ -13,16 +13,16 @@
   height:auto;
   float:left;
   margin-left:15px;
-  padding-right:40px;
+  padding-left:40px;
   padding-bottom: 14px;
 }
 
 /*The header navigation */
 .nav {
   display: inline;
-  float:left;
+  float: right;
   padding: 0;
-  margin: 35px 0;
+  margin: 0 60px;
 }
 
 .nav li {
@@ -35,23 +35,20 @@
 .nav a {
   text-decoration: none;
   color: #ffffff;
-  font-family : InconsolataBold;
+  font-family : GothamBookItalic;
   font-size: 1.3em;
-  padding: 20px;
-  margin: -2px;;
-  border-left: 1px solid white;
+  padding: 10px 5px;
+  margin: 0 15px;
 }
 
 .nav a:hover {
-  color: #000000;
-  background-color: #ffffff;
-  border-right: 1px solid white;
+  color: #78de97;
 }
 
 .banner {
   width:100%;
   position: relative;
-  top:120px;
+  top:52px;
 }
 
 .mySlides {
@@ -103,7 +100,7 @@
 #latestnews{
   position: absolute;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.5);
   left: 480px;
   top: 150px;
   width: 1400px;
@@ -139,21 +136,21 @@
 #officialmerch {
   position: relative;
   text-align: center;
-  top: 117px;
+  top: 31px;
   left: 50%;
   transform: translate(-50%,0);
   max-width: 100%;
-  height: 529px;
-  border:2px solid black;
-  background-color: rgb(255,255,255,0.8);
+  height: 500px;
+  border:none;
+  background-color: rgb(255,255,255,0.3);
 }
 
 #officialmerch h1{
   color: black;
-  text-decoration: underline;
+  text-decoration: none
   font-size:2em;
-  font-family: Inconsolata;
-  text-shadow: 1px 1px #ffffff;
+  font-family: "GothamBook";
+  text-shadow: 1px 1px 2px #ffffff;
 }
 
 #officialmerch .product {
@@ -169,8 +166,8 @@
 #officialmerch .product p {
   color: black;
   font-size:1.5em;
-  font-family: Courier;
-  text-shadow: 1px 1px #ffffff;
+  font-family: GothamBook;
+  text-shadow: 1px 1px 2px #ffffff;
 }
 
 #officialmerch .seemore{
@@ -178,7 +175,7 @@
   position: absolute;
   text-align:center;
   font-size: 1em;
-  font-family: Inconsolata;
+  font-family: GothamBook;
   text-decoration: underline;
   left: 50%;
   top: 90%;
@@ -190,17 +187,17 @@
   top: 200px;
   max-width: 100%;
   height: 640px;
-  border: 2px solid black;
-  background-color: rgb(255,255,255,0.8);
+  border: none;
+  background-color: rgb(255,255,255,0.3);
 }
 
 #officialvideo h1 {
   text-align:center;
   color: black;
-  text-decoration: underline;
+  text-decoration: none;
   font-size:2em;
-  font-family: Inconsolata;
-  text-shadow: 1px 1px #ffffff;
+  font-family: GothamBook;
+  text-shadow: 1px 1px 2px #ffffff;
 }
 
 #officialvideo iframe {
@@ -225,7 +222,8 @@
   position: relative;
   left: 20px;
   color: white;
-  font-family: Inconsolata;
+  font-family: Helvetica;
+  font-weight: lighter;
   font-size: 2.4em;
 }
 
@@ -234,8 +232,9 @@
   left: 20px;
   top: -20px;
   color: white;
-  font-family: Inconsolata;
+  font-family: Helvetica;
   font-weight: lighter;
+  font-style: italic;
 }
 
 #footer .updates input {
@@ -246,7 +245,7 @@
   height: 30px;
   border: none;
   border: solid 1px #ccc;
-  border-radius: 7px;
+  border-radius: 5px;
   font-size: 1.2em;
 }
 
@@ -256,16 +255,19 @@
   width: 110px;
   height: 33px;
   top: 16px;
-  font-family: Inconsolata;
+  font-family: Helvetica;
+  font-weight: lighter;
+  border-radius: 5px;
 }
 
 #footer .search h1{
   position: relative;
-  font-family: Inconsolata;
-  font-size: 2.3em;
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 2.0em;
   color: white;
   left: 770px;
-  top: -225px;
+  top: -235px;
 }
 
 #footer .search input{
@@ -284,7 +286,8 @@
   top: 100px;
   height: 33px;
   width: 110px;
-  font-family: Inconsolata;
+  font-family: Helvetica;
+  border-radius: 5px;
 
 }
 
@@ -309,6 +312,6 @@ body {
   padding:0px;
   margin: 0px;
   z-index:1;
-  background-image: linear-gradient(to right,#403231, #EBA602, #5EEBB9, #445782, #403231);
+  background-color: #000000;
 
 }
