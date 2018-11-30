@@ -46,9 +46,10 @@
 }
 
 .banner {
-  width:100%;
+  max-width:100%;
   position: relative;
   top:52px;
+  left: -1px;
 }
 
 .mySlides {
@@ -98,64 +99,67 @@
 }
 
 #latestnews{
-  position: absolute;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.5);
-  left: 480px;
-  top: 150px;
-  width: 1400px;
-  height: 930px;
-  border: 2px solid black;
+  position: relative;
+  background-color: rgba(255 , 255 ,255 , 0.5);
+  left: 0px;
+  top: 52px;
+  width: 100%;
+  height: 600px;
+  border: none;
 }
 
 #latestnews h1{
-  color: black;
-  text-decoration: underline;
-  font-size:2em;
-  font-family: Inconsolata;
+  position: absolute;
+  text-align: center;
+  font-family: "GothamBook";
+  font-size: 2em;
+  text-shadow: 1px 1px 2px #ffffff;
+  top: 0px;
+  left: 50%;
+  margin: 0px;
+  transform: translate(-50%, 0);
 }
 
-#latestnews img {
-  width:100%;
-}
-
-#latestnews li {
-  text-align: left;
-  font-size: 1.2em;
-  font-family: Inconsolata;
-  margin:10px 0;
-}
-
-#latestnews p {
-  text-align:center;
-  font-size: 1em;
-  font-family: Inconsolata;
-  text-decoration: underline;
+#latestnews .news p{
+  float: left;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  border: 1px solid black;
+  margin-top: 135px;
+  margin-left: 150px;
 }
 
 #officialmerch {
   position: relative;
   text-align: center;
-  top: 31px;
+  top: 26px;
   left: 50%;
   transform: translate(-50%,0);
-  max-width: 100%;
+  width: 100%;
   height: 500px;
-  border:none;
-  background-color: rgb(255,255,255,0.3);
+  background-color: rgba(255 ,255 ,255 ,0.5);
+  padding-left: 1px;
 }
 
 #officialmerch h1{
   color: black;
-  text-decoration: none
+  text-decoration: none;
   font-size:2em;
   font-family: "GothamBook";
   text-shadow: 1px 1px 2px #ffffff;
+  border-top: 1px solid black;
+  padding-left: 1px;
 }
 
 #officialmerch .product {
   float: left;
   margin: 0 1.1em;
+}
+
+#officialmerch .product:hover {
+  opacity: 0.7;
+  transition: 0.3s;
 }
 
 #officialmerch .product img {
@@ -170,6 +174,12 @@
   text-shadow: 1px 1px 2px #ffffff;
 }
 
+#officialmerch .product p:hover{
+  color: white;
+  text-shadow: 1px 1px 2px #000000;
+  transition: 0.3s
+}
+
 #officialmerch .seemore{
   display: inline;
   position: absolute;
@@ -182,22 +192,59 @@
   transform: translate(-50%,0);
 }
 
+#music {
+  position: relative;
+  border: none;
+  width: 100%;
+  height: 500px;
+  top: 26px;
+  background-color: rgba(255 ,255 ,255 , 0.5);
+}
+
+#music h1 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-family: "GothamBook";
+  font-size: 2em;
+  border-top: 1px solid black;
+  margin: 0;
+}
+
+#music .album {
+  float: left;
+  width: 300px;
+  height: 300px;
+  margin-top: 100px;
+  padding-left: 130px;
+}
+
+#music .album:hover{
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
 #officialvideo {
   position: relative;
-  top: 200px;
+  top: 26px;
   max-width: 100%;
   height: 640px;
   border: none;
-  background-color: rgb(255,255,255,0.3);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-top: 1px solid black;
 }
 
 #officialvideo h1 {
-  text-align:center;
+  position: absolute;
+  text-align: center;
   color: black;
   text-decoration: none;
+  left: 50%;
+  transform: translate(-50%, 0);
   font-size:2em;
   font-family: GothamBook;
   text-shadow: 1px 1px 2px #ffffff;
+  margin: 0px;
 }
 
 #officialvideo iframe {
@@ -211,7 +258,7 @@
   position: relative;
   max-width: 100%;
   height: 300px;
-  top: 2330px;
+  top: -1px;
   border: 2px solid black;
   background-color: black;
   margin: 0;
@@ -219,60 +266,66 @@
 }
 
 #footer .updates h1{
-  position: relative;
+  position: absolute;
   left: 20px;
+  top: 20px;
   color: white;
   font-family: Helvetica;
   font-weight: lighter;
   font-size: 2.4em;
+  margin: 0;
 }
 
-#footer .updates h2{
-  position: relative;
+#footer .updates p{
+  position: absolute;
   left: 20px;
-  top: -20px;
+  top: 65px;
   color: white;
   font-family: Helvetica;
-  font-weight: lighter;
+  font-size: 1.3em;
   font-style: italic;
+  margin: 0;
 }
 
 #footer .updates input {
-  position: relative;
+  position: absolute;
   left: 20px;
-  top: 50px;
+  top: 200px;
   width: 350px;
   height: 30px;
   border: none;
   border: solid 1px #ccc;
   border-radius: 5px;
   font-size: 1.2em;
+  margin: 0px;
 }
 
 #footer .updates button{
-  position: relative;
+  position: absolute;
   left: 400px;
   width: 110px;
   height: 33px;
-  top: 16px;
+  top: 200px;
   font-family: Helvetica;
   font-weight: lighter;
   border-radius: 5px;
+  margin: 0px;
 }
 
 #footer .search h1{
-  position: relative;
+  position: absolute;
   font-family: Helvetica;
   font-weight: lighter;
   font-size: 2.0em;
   color: white;
-  left: 770px;
-  top: -235px;
+  left: 735px;
+  top: 20px;
+  margin: 0px;
 }
 
 #footer .search input{
   position: absolute;
-  left: 770px;
+  left: 735px;
   top: 100px;
   width: 300px;
   height: 30px;
@@ -282,7 +335,7 @@
 
 #footer .search button{
   position: absolute;
-  left: 1100px;
+  left: 1065px;
   top: 100px;
   height: 33px;
   width: 110px;
@@ -292,26 +345,26 @@
 }
 
 #socialmedia {
-  position: relative;
-  left: 760px;
-  top: -120px;
+  position: absolute;
+  left: 710px;
+  top: 220px;
   padding:0;
   margin:0;
 }
 
 #socialmedia .icon img{
-  width: 80px;
+  width: 60px;
   height: auto;
-  margin: 0px 5px;
+  margin: 0px 15px;
 }
 
 body {
-  position: relative;
   overflow-y: scroll;
   overflow-x: hidden;
   padding:0px;
   margin: 0px;
-  z-index:1;
-  background-color: #000000;
-
+  background-image: url("../assets/background1blur.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
