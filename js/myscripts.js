@@ -10,6 +10,9 @@ var slideIndex = 1;
 showDivs(slideIndex);
 autoscroll();
 
+showDivsMobile(slideIndex);
+autoscroll2();
+
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
@@ -39,10 +42,55 @@ function showDivs(n)
     x[slideIndex - 1].style.display = "block";
 }
 
+function showDivsMobile(n)
+{
+console.log("show slides mobile working");
+  var i;
+  var x = document.getElementsByClassName("mobileSlides");
+
+    if (n > x.length)
+    {
+      slideIndex = 1;
+    }
+
+    if (n < 1)
+    {
+      slideIndex = x.length;
+    }
+
+    for (i = 0; i < x.length; i++)
+    {
+      x[i].style.display = "none";
+    }
+
+    x[slideIndex - 1].style.display = "block";
+}
+
 function autoscroll()
 {
   var i;
   var x = document.getElementsByClassName("mySlides");
+
+  for(i = 0; i < x.length; i++)
+  {
+    x[i].style.display = "none";
+  }
+
+  slideIndex++;
+  if (slideIndex >  x.length)
+  {
+    slideIndex = 1;
+  }
+
+  x[slideIndex - 1].style.display = "block"
+  setTimeout(autoscroll, 3000);
+}
+
+function autoscroll2()
+{
+  console.log("autoscrollMobile working");
+  var i;
+  var x = document.getElementsByClassName("mobileSlides");
 
   for(i = 0; i < x.length; i++)
   {
