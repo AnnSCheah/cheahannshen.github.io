@@ -535,8 +535,8 @@ body {
   {
     width: 100%;
     text-align: center;
-    color: black;
-    text-shadow: 1px 1px 1px #ffffff;
+    color: white;
+    text-shadow: 1px 1px 1px #000000;
   }
 
   #latestnews .news p
@@ -563,8 +563,8 @@ body {
     position: absolute;
     width: 100%;
     top: 2rem;
-    color: black;
-    text-shadow: 1px 1px 1px #ffffff;
+    color: white;
+    text-shadow: 1px 1px 1px #000000;
   }
 
   #officialmerch .product
@@ -581,9 +581,9 @@ body {
   }
 
   #officialmerch .product p{
-    color: black;
+    color: white;
     font-size: 2rem;
-    text-shadow: 1px 1px 1px #ffffff;
+    text-shadow: 1px 1px 1px #000000;
   }
 
   #music{
@@ -605,8 +605,8 @@ body {
   }
 
   #officialvideo h1 {
-    color: black;
-    text-shadow: 1px 1px 1px #ffffff;
+    color: white;
+    text-shadow: 1px 1px 1px #000000;
   }
 
   #officialvideo iframe {
@@ -657,7 +657,7 @@ body {
 
   body
   {
-    background-color: white;
+    background-color: black;
     background-image: none;
   }
 }
