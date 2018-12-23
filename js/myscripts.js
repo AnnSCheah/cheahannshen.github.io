@@ -14,7 +14,7 @@ autoscroll();
 showDivsMobile(slideIndexMobile);
 autoscroll2();
 
-function myFunction() {
+function dropDown() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
     x.style.display = "none";
