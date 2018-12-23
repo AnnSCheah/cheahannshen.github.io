@@ -158,12 +158,28 @@ html {
 
 #latestnews .news p{
   display: inline-block;
+  color: white;
   width: 300px;
   height: 300px;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid white;
   margin: 0 2rem;
   margin-top: 135px;
+}
+
+#latestnews .seemore a{
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translate(-50%,0);
+  font-size: 1rem;
+  font-family: GothamBook;
+  text-decoration: none;
+  color: white;
+}
+
+#latestnews .seemore a:hover {
+  color: #78de97;
 }
 
 #officialmerch {
@@ -224,7 +240,7 @@ html {
   display: inline;
   position: absolute;
   text-align:center;
-  font-size: 1em;
+  font-size: 1rem;
   font-family: GothamBook;
   left: 50%;
   top: 90%;
@@ -272,6 +288,21 @@ html {
   transition: 0.3s;
 }
 
+#music .seemore a{
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translate(-50%,0);
+  font-size: 1rem;
+  font-family: GothamBook;
+  text-decoration: none;
+  color: white;
+}
+
+#music .seemore a:hover {
+  color:#78de97;
+}
+
 #officialvideo {
   position: relative;
   top: 3.2rem;
@@ -299,6 +330,21 @@ html {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+#officialvideo .seemore a{
+  position: absolute;
+  left: 50%;
+  bottom: 4.5rem;
+  transform: translate(-50%,0);
+  font-family: "GothamBook";
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+#officialvideo .seemore a:hover{
+  color:#78de97;
 }
 
 #footer {
@@ -477,7 +523,7 @@ body {
 
   #menu {
     display: block;
-    width: 800px;
+    width: 61.54rem;
     height: auto;
     padding: 50px;
     padding-top: 50px;
@@ -610,8 +656,8 @@ body {
   }
 
   #officialvideo iframe {
-    width: 30rem;
-    height: 20rem;
+    width: 25rem;
+    height: 15rem;
   }
 
   #footer {
@@ -620,13 +666,13 @@ body {
   }
 
   #footer .updates input {
-    width: 25rem;
+    width: 65%;
   }
 
   #footer .updates button {
     position: absolute;
     width: 8.3rem;
-    left: 27.69rem;
+    left: 73%;
   }
 
   #footer .search h1 {
@@ -638,7 +684,7 @@ body {
   #footer .search input {
     position: absolute;
     top: 30.76rem;
-    width: 25rem;
+    width: 65%;
     left: 1.8rem;
   }
 
@@ -646,13 +692,18 @@ body {
     position: absolute;
     top: 30.76rem;
     width: 8.3rem;
-    left: 27.69rem;
+    left: 73%;
   }
 
   #socialmedia {
     position: absolute;
     top: 45rem;
     width: 100%;
+    overflow: hidden;
+  }
+
+  #socialmedia .icon img{
+    width: 4rem;
   }
 
   body
