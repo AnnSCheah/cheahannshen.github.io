@@ -3,6 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <head>
     <title>Imagine Dragons | Unofficial Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
   </head>
@@ -14,7 +15,6 @@
   <div id="wrapper">
     <header>
       <img class="logo" src="assets/logo5.png">
-      <img class="mobileLogo" src="assets/logo6.png">
         <nav>
         <ul class="nav">
             <li><a href="#">HOME</a></li>
@@ -23,22 +23,18 @@
             <li class="about"><a href="#">ABOUT</a></li>
           </ul>
         </nav>
-        <nav>
-          <div id="menutoggle">
-            <input type="checkbox">
-            <div class="hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <ul id="menu">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">TOUR</a></li>
-                <li><a href="#">MERCH</a></li>
-                <li><a href="#">ABOUT</a></li>
-              </ul>
+        <div class="topnav">
+          <a href="#"><img class="mobileLogo" src="assets/logo6.png"></a>
+          <div id="myLinks">
+            <a href="#">HOME</a>
+            <a href="#">TOUR</a>
+            <a href="#">MERCH</a>
+            <a href="#">ABOUT</a>
           </div>
-        </nav>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
     </header>
   </div>
 

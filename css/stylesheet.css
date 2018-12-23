@@ -58,19 +58,7 @@ html {
   color: #78de97;
 }
 
-#menutoggle input {
-  display: none;
-}
-
-#menutoggle span {
-  display: none;
-}
-
-#menutoggle input:checked ~ ul {
-  transform: none;
-}
-
-#menu {
+.topnav {
   display: none;
 }
 
@@ -465,18 +453,22 @@ body {
 
 @media only screen and (max-width: 500px)
 {
+  #wrapper {
+    height: 3rem;
+  }
+
   .logo{
     display: none;
   }
 
   .mobileLogo {
-    display: inline;
-    width: 50%;
+    display: block;
+    width: 17.5rem;
     height: auto;
     position: relative;
     margin: 0px;
-    top : 0%;
-    left: 8rem;
+    padding: 0;
+    left: 6.3rem;
     transform: translate(-50% 0);
   }
 
@@ -484,74 +476,42 @@ body {
     display: none;
   }
 
-  #menutoggle {
+  .topnav {
+    overflow: hidden;
+    background-color: black;
     position: relative;
-    right : 0px;
-    top: 0px;
-    z-index: 1;
-  }
-
-  #menutoggle input{
     display: block;
-    width: 30px;
-    height: 25px;
-    cursor: pointer;
-    position: absolute;
-    right: 22px;
-    top : -40px;
-    margin: 0px;
-    opacity : 0;
-    z-index: 2;
+    left: -0.5rem;
   }
 
-  #menutoggle span {
-    display: block;
-    width: 28px;
-    height: 3px;
-    margin-bottom: 5px;
-    background-color: #cdcdcd;
-    border-radius: 3px;
+  .topnav #myLinks {
+    display: none;
   }
 
-  #menutoggle .hamburger {
-    position : absolute;
-    right: 25px;
-    width: 28px;
-    margin: 0px;
-    top: -40px;
-  }
-
-  #menu {
-    display: block;
-    width: 61.54rem;
-    height: auto;
-    padding: 50px;
-    padding-top: 50px;
-    list-style-type : none;
-    background-color : #000000;
-    position : relative;
-    top: -15px;
-    left: -10px;
-
-    transform-origin: 0% 0%;
-    transform: translate(130%, 0);
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  }
-
-  #menu a {
+  .topnav a {
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.5rem;
+    font-family: "GothamBookItalic";
     text-decoration: none;
-    color: #ffffff;
-    font-family : GothamBookItalic;
-    transition: color 0.3s ease;
+    display: block;
+    width: 6rem;
   }
 
-  #menu a:hover {
+  .topnav a.icon {
+    position: absolute;
+    display: block;
+    right: 0.5rem;
+    top: 0rem;
+    width: 2rem;
+  }
+
+  .topnav a:hover {
     color: #78de97;
   }
 
-  #menu li {
-    padding: 10px 0;
-    font-size: 1.5rem;
+  .active {
+    color: white;
   }
 
   #mobileBanner {
