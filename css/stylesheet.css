@@ -652,7 +652,7 @@ body {
 
   #footer {
     width: 100%;
-    height: 40rem;
+    height: 35rem;
   }
 
   #footer .updates h1 {
@@ -665,34 +665,36 @@ body {
 
   #footer .updates input {
     position: absolute;
-    top: 10rem;
     width: 60%;
   }
 
   #footer .updates button {
     position: absolute;
-    top: 10rem;
     width: 6rem;
     left: 75%;
   }
 
   #footer .search h1 {
     position: absolute;
-    left: 2.0rem;
+    left: 50%;
     top: 20rem;
     font-size: 1.8rem;
+    transform: translate(-50%,0);
+  }
+
+  #footer .formSearch {
+    position: absolute;
+    top: 70%;
   }
 
   #footer .search input {
     position: absolute;
-    top: 25rem;
     width: 60%;
     left: 1.8rem;
   }
 
   #footer .search button {
     position: absolute;
-    top: 25rem;
     width: 6rem;
     left: 75%;
   }
