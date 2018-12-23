@@ -468,7 +468,7 @@ body {
     position: relative;
     margin: 0px;
     padding: 0;
-    left: 6.3rem;
+    left: 0%;
     transform: translate(-50% 0);
   }
 
@@ -631,8 +631,8 @@ body {
 
   #footer .updates button {
     position: absolute;
-    width: 8.3rem;
-    left: 73%;
+    width: 6rem;
+    left: 75%;
   }
 
   #footer .search h1 {
@@ -651,8 +651,8 @@ body {
   #footer .search button {
     position: absolute;
     top: 30.76rem;
-    width: 8.3rem;
-    left: 73%;
+    width: 6rem;
+    left: 75%;
   }
 
   #socialmedia {
@@ -663,7 +663,7 @@ body {
   }
 
   #socialmedia .icon img{
-    width: 4rem;
+    width: 3rem;
   }
 
   body
