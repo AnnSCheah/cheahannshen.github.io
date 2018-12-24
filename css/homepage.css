@@ -1,0 +1,852 @@
+html {
+  font-size: 16px;
+}
+
+@media (min-width: 451px) and (max-width: 768px){
+  html { font-size: 15px; }
+}
+
+
+@media (max-width: 450px){
+  html { font-size: 13px; }
+}
+
+#wrapper {
+  background-color : #000000;
+  padding:0.625rem;
+  margin:0;
+  width:100%;
+  height:2rem;
+  z-index: 10;
+  position: fixed;
+}
+
+.mobileLogo {
+  display: none;
+}
+
+.logo {
+  position: absolute;
+  top: -3px;
+  width:100px;
+  height:auto;
+  margin-left:15px;
+  padding-left:40px;
+}
+
+/*The header navigation */
+.nav {
+  display: inline;
+  float: right;
+  padding: 0;
+  margin: 0 60px;
+}
+
+.nav li {
+  display: inline;
+  padding: 0;
+  margin: 0;
+
+}
+
+.nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family : GothamBookItalic;
+  font-size: 1.3em;
+  padding: 10px 5px;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #78de97;
+}
+
+.topnav {
+  display: none;
+}
+
+#mobileBanner {
+  display: none;
+}
+
+.banner {
+  max-width:100%;
+  position: relative;
+  top:52px;
+  left: -1px;
+}
+
+.mySlides {
+    display: none;
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.displayleft {
+  position: absolute;
+  color: white;
+  border: none;
+  font-size: 2.0em;
+  left: 3%;
+  top: 50%;
+  margin: 0px;
+  padding: 0px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.displayleft:hover {
+  color: black;
+  text-shadow: 1px 1px 2px white;
+  cursor: pointer;
+}
+
+.displayright {
+  position: absolute;
+  color: white;
+  border: none;
+  font-size: 2.0em;
+  right: 3%;
+  top: 50%;
+  margin: 0px;
+  padding: 0px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.displayright:hover {
+  color: black;
+  text-shadow: 1px 1px 2px white;
+  cursor: pointer;
+}
+
+#latestnews{
+  position: relative;
+  background-color: rgba(255 , 255 ,255 , 0.1);
+  text-align: center;
+  left: 0px;
+  top: 52px;
+  width: 100%;
+  height: 35rem;
+  border: none;
+  border-bottom: 1px solid white;
+  overflow: hidden;
+}
+
+#latestnews h1{
+  position: absolute;
+  text-align: center;
+  font-family: "GothamBook";
+  font-size: 2em;
+  color: white;
+  text-shadow: 1px 1px 1px #000000;
+  left: 50%;
+  margin-top: 2rem;
+  transform: translate(-50%, 0);
+}
+
+#latestnews .news p{
+  display: inline-block;
+  color: white;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  border: 1px solid white;
+  margin: 0 2rem;
+  margin-top: 135px;
+}
+
+#latestnews .seemore a{
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translate(-50%,0);
+  font-size: 1rem;
+  font-family: GothamBook;
+  text-decoration: none;
+  color: white;
+}
+
+#latestnews .seemore a:hover {
+  color: #78de97;
+}
+
+#officialmerch {
+  position: relative;
+  text-align: center;
+  top: 3.2rem;
+  left: 50%;
+  transform: translate(-50%,0);
+  width: 100%;
+  height: 35rem;
+  background-color: rgba(255 ,255 ,255 ,0.1);
+  padding-left: 1px;
+  border-bottom: 1px solid white;
+  overflow: hidden;
+}
+
+#officialmerch h1{
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  font-size:2rem;
+  font-family: "GothamBook";
+  text-shadow: 1px 1px 1px #000000;
+  padding-left: 1px;
+  margin-top: 2rem;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+#officialmerch .product {
+  display: inline-block;
+  margin: 8rem 1rem;
+}
+
+#officialmerch .product:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+#officialmerch .product img {
+  width: 17.5rem;
+  height: auto;
+}
+
+#officialmerch .product p {
+  color: white;
+  font-size:1.5em;
+  font-family: GothamBook;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+#officialmerch .product p:hover{
+  color: #78de97;
+  transition: 0.3s
+}
+
+#officialmerch .seemore {
+  display: inline;
+  position: absolute;
+  text-align:center;
+  font-size: 1rem;
+  font-family: GothamBook;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%,0);
+  color: white;
+}
+
+#officialmerch .seemore:hover {
+  color: #78de97;
+}
+
+#music {
+  position: relative;
+  border: none;
+  text-align: center;
+  width: 100%;
+  height: 500px;
+  top: 3.2rem;
+  background-color: rgba(255 ,255 ,255 , 0.1);
+  border-bottom: 1px solid white;
+  overflow: hidden;
+}
+
+#music h1 {
+  position: absolute;
+  color: white;
+  width: 100%;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000000;
+  font-family: "GothamBook";
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+#music .album {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  margin: 0 2rem;
+  margin-top: 8rem;
+}
+
+#music .album:hover{
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+#music .seemore a{
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translate(-50%,0);
+  font-size: 1rem;
+  font-family: GothamBook;
+  text-decoration: none;
+  color: white;
+}
+
+#music .seemore a:hover {
+  color:#78de97;
+}
+
+#officialvideo {
+  position: relative;
+  top: 3.2rem;
+  max-width: 100%;
+  height: 45rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#officialvideo h1 {
+  position: absolute;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size:2em;
+  font-family: GothamBook;
+  text-shadow: 1px 1px 2px #000000;
+  margin-top: 2rem;
+}
+
+#officialvideo iframe {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 35rem;
+  height: 25rem;
+}
+
+#officialvideo .seemore a{
+  position: absolute;
+  left: 50%;
+  bottom: 4.5rem;
+  transform: translate(-50%,0);
+  font-family: "GothamBook";
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+#officialvideo .seemore a:hover{
+  color:#78de97;
+}
+
+#footer {
+  position: relative;
+  width: 100%;
+  height: 37.5rem;
+  top: -1px;
+  border: 2px solid black;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+#footer .updates h1{
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  color: white;
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 2.4em;
+  margin: 0;
+  transform: translate(-50%,0);
+}
+
+#footer .updates p{
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 65px;
+  color: white;
+  font-family: Helvetica;
+  font-size: 1.3em;
+  font-style: italic;
+  margin: 0;
+  width: 30rem;
+  transform: translate(-50%,0);
+}
+
+#footer .formUpdates {
+  position: absolute;
+  width: 33rem;
+  height: 2rem;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%,0);
+  margin: 0;
+  padding: 0;
+}
+
+#footer .updates input {
+  position: absolute;
+  left: 1.25rem;
+  width: 21.86rem;
+  height: 1.875rem;
+  border: none;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  font-size: 1.2em;
+  margin: 0px;
+}
+
+#footer .updates button{
+  position: absolute;
+  left: 25rem;
+  width: 6.875rem;
+  height: 2.06rem;
+  font-family: Helvetica;
+  font-weight: lighter;
+  border-radius: 5px;
+  margin: 0px;
+}
+
+#footer .search h1{
+  position: absolute;
+  text-align: center;
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 2.4rem;
+  color: white;
+  width: 25rem;
+  left: 50%;
+  top: 50%;
+  margin: 0px;
+  transform: translate(-50%,0);
+}
+
+#footer .formSearch {
+  position: absolute;
+  width: 33rem;
+  height: 2rem;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%,0);
+}
+
+#footer .search input{
+  position: absolute;
+  left: 1.25rem;
+  width: 21.86rem;
+  height: 1.875rem;
+  border: none;
+  border-radius: 5px;
+}
+
+#footer .search button{
+  position: absolute;
+  left: 25rem;
+  height: 33px;
+  width: 110px;
+  font-family: Helvetica;
+  border-radius: 5px;
+
+}
+
+#socialmedia {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  padding:0;
+  margin:0;
+  text-align: center;
+  transform: translate(-50%,-50%);
+}
+
+#socialmedia .icon img{
+  display: inline-block;
+  width: 2.6rem;
+  height: auto;
+  margin: 0 0.93rem;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding:0px;
+  margin: 0px;
+  background-color: black;
+  background-size: 100% 100%;
+}
+
+@media only screen and (max-width: 450px)
+{
+  #wrapper {
+    height: 3rem;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .mobileLogo {
+    display: block;
+    width: 17.5rem;
+    height: auto;
+    position: relative;
+    margin: 0px;
+    padding: 0;
+    left: 0%;
+    transform: translate(-50% 0);
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+    display: block;
+    left: -0.5rem;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav a {
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.5rem;
+    font-family: "GothamBookItalic";
+    text-decoration: none;
+    display: block;
+    width: 6rem;
+  }
+
+  .topnav a.icon {
+    position: absolute;
+    display: block;
+    right: 0.5rem;
+    top: 0rem;
+    width: 2rem;
+  }
+
+  .topnav a:hover {
+    color: #78de97;
+  }
+
+  .active {
+    color: white;
+  }
+
+  #mobileBanner {
+    display:block;
+    max-width:100%;
+    position: relative;
+    top: 52px;
+    left: -1px;
+  }
+
+  .mobileSlides {
+    display: none;
+    width: 100%;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  #latestnews
+  {
+    height: 150em;
+    border-bottom: 1px solid black;
+  }
+
+  #latestnews h1
+  {
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px #000000;
+  }
+
+  #latestnews .news p
+  {
+    float: left;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  #merchContainer {
+    width: 38.46rem;
+  }
+
+  #officialmerch
+  {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 300rem;
+    border-bottom: 1px solid black;
+  }
+
+  #officialmerch h1{
+    position: absolute;
+    width: 100%;
+    top: 2rem;
+    color: white;
+    text-shadow: 1px 1px 1px #000000;
+  }
+
+  #officialmerch .product
+  {
+    float: left;
+    margin: 0;
+    margin-top : 10rem;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  #officialmerch .product img {
+    width: 30rem;
+  }
+
+  #officialmerch .product p{
+    color: white;
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px #000000;
+  }
+
+  #music{
+    height: 160rem;
+    border-bottom: 1px solid black;
+  }
+
+  #music .album{
+    width: 30rem;
+    height: auto;
+    margin: 0;
+    margin-left: 50%;
+    margin-top: 8rem;
+    transform: translate(-50%,0);
+  }
+
+  #officialvideo {
+    height: 40rem;
+  }
+
+  #officialvideo h1 {
+    color: white;
+    text-shadow: 1px 1px 1px #000000;
+  }
+
+  #officialvideo iframe {
+    width: 25rem;
+    height: 15rem;
+  }
+
+  #footer {
+    width: 100%;
+    height: 35rem;
+  }
+
+  #footer .updates h1 {
+    font-size: 1.8rem;
+  }
+
+  #footer .updates p {
+    font-size: 1.2rem;
+  }
+
+  #footer .updates input {
+    position: absolute;
+    width: 60%;
+  }
+
+  #footer .updates button {
+    position: absolute;
+    width: 6rem;
+    left: 75%;
+  }
+
+  #footer .search h1 {
+    position: absolute;
+    left: 50%;
+    top: 20rem;
+    font-size: 1.8rem;
+    transform: translate(-50%,0);
+  }
+
+  #footer .formSearch {
+    position: absolute;
+    top: 70%;
+  }
+
+  #footer .search input {
+    position: absolute;
+    width: 60%;
+    left: 1.8rem;
+  }
+
+  #footer .search button {
+    position: absolute;
+    width: 100%;
+    left: 75%;
+  }
+
+  #socialmedia {
+    position: absolute;
+    top: 35rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #socialmedia .icon img{
+    width: 3rem;
+  }
+
+  body
+  {
+    background-color: black;
+    background-image: none;
+  }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 768px)
+{
+  #wrapper {
+    height: 3rem;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .mobileLogo {
+    display: block;
+    width: 17.5rem;
+    height: auto;
+    position: relative;
+    margin: 0px;
+    padding: 0;
+    left: 0%;
+    transform: translate(-50% 0);
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+    display: block;
+    left: -0.7rem;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav a {
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.5rem;
+    font-family: "GothamBookItalic";
+    text-decoration: none;
+    display: block;
+    width: 6rem;
+  }
+
+  .topnav a.icon {
+    position: absolute;
+    display: block;
+    right: 0.5rem;
+    top: 0rem;
+    width: 2rem;
+  }
+
+  .topnav a:hover {
+    color: #78de97;
+  }
+
+  #officialvideo iframe {
+    width: 28rem;
+    height: 18rem;
+  }
+
+  #footer {
+    width: 100%;
+    height: 35rem;
+  }
+
+  #footer .updates h1 {
+    font-size: 1.8rem;
+  }
+
+  #footer .updates p {
+    font-size: 1.2rem;
+  }
+
+  #footer .formUpdates {
+    position: absolute;
+    top: 30%;
+  }
+
+  #footer .updates input {
+    position: absolute;
+    width: 60%;
+  }
+
+  #footer .updates button {
+    position: absolute;
+    width: 6rem;
+    left: 75%;
+  }
+
+  #footer .search h1 {
+    position: absolute;
+    left: 50%
+    top: 50%;
+    font-size: 1.8rem;
+  }
+
+  #footer .formSearch {
+    position: absolute;
+    top: 65%;
+  }
+
+  #footer .search input {
+    position: absolute;
+    width: 60%;
+    left: 1.8rem;
+  }
+
+  #footer .search button {
+    position: absolute;
+    width: 6rem;
+    left: 75%;
+  }
+
+  #socialmedia {
+    position: absolute;
+    top: 33rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #socialmedia .icon img{
+    width: 3rem;
+  }
+
+  body {
+    background-color: black;
+  }
+
+}
