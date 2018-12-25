@@ -74,7 +74,7 @@ html {
 .banner {
   max-width:100%;
   position: relative;
-  top:52px;
+  top:3.25rem;
   left: -1px;
 }
 
@@ -323,8 +323,8 @@ html {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 35rem;
-  height: 25rem;
+  max-width: 50%;
+  height: 60%;
 }
 
 #officialvideo .seemore a{
@@ -485,6 +485,7 @@ body {
 {
   #wrapper {
     height: 3rem;
+    padding: 0.77rem;
   }
 
   .logo{
@@ -720,6 +721,7 @@ body {
 @media only screen and (min-width: 451px) and (max-width: 768px)
 {
   #wrapper {
+    padding: 0.67rem;
     height: 3rem;
   }
 
@@ -774,6 +776,11 @@ body {
 
   .topnav a:hover {
     color: #78de97;
+  }
+
+  .banner {
+    position: relative;
+    top: 4.25rem;
   }
 
   #officialvideo iframe {

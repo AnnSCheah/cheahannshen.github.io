@@ -12,10 +12,10 @@ html { font-size: 16px; }
 
 #wrapper {
   background-color : #000000;
-  padding:0.77rem;
-  margin:0;
-  width:100%;
-  height:2.46rem;
+  padding: 0.77rem;
+  margin: 0;
+  width: 100%;
+  height: 3rem;
   z-index: 10;
   position: fixed;
 }
@@ -75,11 +75,13 @@ html { font-size: 16px; }
 
 #memberContainer {
   position: relative;
-  top: 4.4rem;
+  text-align: center;
+  top: 4.5rem;
   height: 135rem;
   background-color: black;
-  margin: 0
+  margin: 0;
   padding: 0;
+  border-top: 1px solid white;
 
 }
 
@@ -103,6 +105,11 @@ html { font-size: 16px; }
   margin-bottom: 5rem;
   border-radius: 50%;
   overflow: hidden;
+}
+
+#memberContainer .members:hover {
+  opacity: 0.6;
+  transition: 0.3s;
 }
 
 #memberContainer .dan {
@@ -136,10 +143,11 @@ html { font-size: 16px; }
 
 #history {
   position: relative;
-  width: 100%;
-  height: 120rem;
+  max-width: 100%;
+  height: auto;
   top: 3rem;
   background-color: white;
+  padding-bottom: 2rem;
 }
 
 #history h1 {
@@ -160,7 +168,7 @@ html { font-size: 16px; }
   position: relative;
   width: 100%;
   height: 35rem;
-  top: -1px;
+  top: 3rem;
   border: 2px solid black;
   background-color: black;
   margin: 0;
@@ -300,6 +308,7 @@ body {
 @media only screen and (min-width: 451px) and (max-width: 768px)
 {
   #wrapper {
+    padding: 0.67rem;
     height: 3rem;
   }
 
@@ -356,6 +365,43 @@ body {
     color: #78de97;
   }
 
+  #memberContainer{
+    position: relative;
+    top: 4.3rem;
+    max-width: 100%;
+    text-align: center;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  #memberContainer .members {
+    float: none;
+    display: inline-block;
+    width: 20rem;
+    height: 20rem;
+    margin: 0;
+    padding: 0;
+    transform: translate(0,0);
+    margin: 0 2rem;
+    margin-bottom: 5rem;
+  }
+
+  #memberContainer .dan {
+    position: absolute;
+    width: 20rem;
+    height: auto;
+    left: 0rem;
+  }
+
+  #memberContainer .wayne {
+    position: absolute;
+    width: 24rem;
+    height: auto;
+    left: -0.3rem;
+  }
+
   body {
     background-color: white;
   }
@@ -363,6 +409,11 @@ body {
 
 @media only screen and (min-width: 769px)
 {
+  #wrapper {
+    padding: 0.625rem;
+    height: 2rem;
+  }
+
   .mobileLogo {
     display: none;
   }
@@ -406,6 +457,69 @@ body {
 
   .topnav {
     display: none;
+  }
+
+  #memberContainer{
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-top: 1px solid white;
+    top: 3.25rem;
+  }
+
+  #memberContainer .members {
+    float: none;
+    display: inline-block;
+    width: 20rem;
+    height: 20rem;
+    margin: 0;
+    padding: 0;
+    transform: translate(0,0);
+    margin: 0 2rem;
+    margin-bottom: 5rem;
+  }
+
+  #memberContainer .dan {
+    position: absolute;
+    left: 0rem;
+    width: 20rem;
+    height: auto;
+  }
+
+  #memberContainer .wayne {
+    position: absolute;
+    left: -0.3rem;
+    width: 24rem;
+    height: auto;
+  }
+
+  #memberContainer .ben {
+    position: absolute;
+    left: -8rem;
+    width: 33rem;
+    height: auto;
+  }
+
+  #memberContainer .platzman {
+    position: absolute;
+    left: -0.5rem;
+    width: 25rem;
+    height: auto;
+  }
+
+  #history {
+    position: relative;
+    top: 3.2rem;
+  }
+
+  #history p {
+    position: relative;
+    font-size: 1.2rem;
+    margin: 0 5rem;
   }
 
   body {
