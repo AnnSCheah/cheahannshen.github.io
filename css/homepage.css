@@ -512,7 +512,7 @@ body {
     background-color: black;
     position: relative;
     display: block;
-    left: -0.5rem;
+    margin-left: -1rem;
   }
 
   .topnav #myLinks {

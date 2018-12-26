@@ -2,12 +2,12 @@ html {
   font-size: 13px;
 }
 
-@media (min-width: 769px){
-html { font-size: 16px; }
+@media (min-width: 451px) and (max-width: 768px){
+  html { font-size: 15px }
 }
 
-@media (min-width: 451px) and (max-width: 768px){
-  html { font-size: 15px; }
+@media (min-width: 769px){
+  html { font-size: 16px }
 }
 
 #wrapper {
@@ -73,102 +73,284 @@ html { font-size: 16px; }
   color: #78de97;
 }
 
-#memberContainer {
+#musicContainer {
   position: relative;
-  text-align: center;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
   top: 4.5rem;
-  height: 135rem;
-  background-color: black;
+  border-top: 1px solid white;
+}
+
+#musicContainer h1 {
+  position: absolute;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: "GothamBook";
   margin: 0;
   padding: 0;
-  border-top: 1px solid white;
-
+  margin-top: 2rem;
 }
 
-#memberContainer h1 {
-  text-align: center;
-  font-family: "GothamBook";
-  font-size: 2rem;
-  color: white;
-  margin: 0;
-  margin-bottom: 6rem;
-  padding-top: 3rem;
-}
-
-#memberContainer .members {
-  float: left;
-  border: none;
-  height: 25rem;
-  width: 25rem;
-  margin: 0 50%;
+#musicContainer .album1 {
+  position: relative;
+  max-width: 90%;
+  height: 105.7rem;
+  top: 8rem;
+  background-color: rgba(39, 94, 92, 0.6);
+  left: 50%;
   transform: translate(-50%,0);
-  margin-bottom: 5rem;
-  border-radius: 50%;
-  overflow: hidden;
 }
 
-#memberContainer .members:hover {
-  opacity: 0.6;
+#musicContainer .album1 img{
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+#musicContainer .album1 h1 {
+  position: absolute;
+  color: white;
+  font-family: "GothamBook";
+  top: 30rem;
+}
+
+#musicContainer .album1 a {
+  position: absolute;
+  text-align: center;
+  width: 5rem;
+  height: auto;
+  top: 36rem;
+  left: 50%;
+  transform: translate(-50%,0);
+  color: #1BBA54;
+  text-decoration: none;
+  font-family: "GothamBook";
+  font-weight: bold;
+  font-size: 1.0rem;
+  border: 1px solid #1BBA54;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+
+#musicContainer .album1 a:hover {
+  background-color: #1BBA54;
+  color: white;
   transition: 0.3s;
 }
 
-#memberContainer .dan {
+#musicContainer .album1Music {
   position: absolute;
-  left: -2.5rem;
-  top: -1.5rem;
-  width: 30rem;
+  top: 40rem;
+  width: 100%;
   height: auto;
 }
 
-#memberContainer .wayne{
-  position: absolute;
-  left: 0rem;
-  width: 28rem;
-  height: auto;
+#musicContainer .album1 .album1Music p{
+  color: white;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  font-family: "GothamBook";
+  border-bottom: 0.5px solid black;
 }
 
-#memberContainer .ben {
-  position: absolute;
-  left: -10rem;
-  width: 40rem;
-  height: auto;
-}
-
-#memberContainer .platzman {
-  position: absolute;
-  left: -1.5rem;
-  width: 28rem;
-  height: auto;
-}
-
-#history {
+#musicContainer .album2 {
   position: relative;
-  max-width: 100%;
+  max-width: 90%;
+  height: 92.65rem;
+  top: 12rem;
+  background-color: rgba(24, 53, 61, 0.8);
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+#musicContainer .album2 img {
+  position: absolute;
+  width: 100%;
   height: auto;
-  top: 3rem;
-  background-color: white;
-  padding-bottom: 2rem;
 }
 
-#history h1 {
+#musicContainer .album2 h1 {
+  position: absolute;
+  color: white;
+  font-family: "GothamBook";
+  top: 30rem;
+}
+
+#musicContainer .album2 a {
+  position: absolute;
   text-align: center;
+  width: 5rem;
+  height: auto;
+  top: 36rem;
+  left: 50%;
+  transform: translate(-50%,0);
+  color: #1BBA54;
+  text-decoration: none;
   font-family: "GothamBook";
-  font-size: 1.8rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  font-weight: bold;
+  font-size: 1.0rem;
+  border: 1px solid #1BBA54;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
 }
 
-#history p {
+#musicContainer .album2 a:hover {
+  background-color: #1BBA54;
+  color: white;
+}
+
+#musicContainer .album2Music {
+  position: absolute;
+  top: 40rem;
+  width: 100%;
+  height: auto;
+}
+
+#musicContainer .album2Music p{
+  color: white;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
   font-family: "GothamBook";
-  font-size: 1.05em;
-  margin: 0 1rem;
+  border-bottom: 0.5px solid black;
+}
+
+#musicContainer .album3 {
+  position: relative;
+  max-width: 90%;
+  height: 132.1rem;
+  top: 16rem;
+  background-color: rgba(186, 142, 74, 0.8);
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+#musicContainer .album3 img{
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+#musicContainer .album3 h1 {
+  position: absolute;
+  color: white;
+  font-family: "GothamBook";
+  top: 30rem;
+}
+
+#musicContainer .album3 a {
+  position: absolute;
+  text-align: center;
+  width: 5rem;
+  height: auto;
+  top: 36rem;
+  left: 50%;
+  transform: translate(-50%,0);
+  color: #1BBA54;
+  text-decoration: none;
+  font-family: "GothamBook";
+  font-weight: bold;
+  font-size: 1.0rem;
+  border: 1px solid #1BBA54;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+
+#musicContainer .album3 a:hover {
+  background-color: #1BBA54;
+  color: white;
+  transition: 0.3s;
+}
+
+#musicContainer .album3Music {
+  position: absolute;
+  top: 40rem;
+  width: 100%;
+  height: auto;
+}
+
+#musicContainer .album3 .album3Music p{
+  color: white;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  font-family: "GothamBook";
+  border-bottom: 0.5px solid black;
+}
+
+#musicContainer .album4 {
+  position: relative;
+  max-width: 90%;
+  height: 110.1rem;
+  top: 20rem;
+  background-color: rgba(67, 48, 71, 0.8);
+  left: 50%;
+  transform: translate(-50%,0);
+  margin-bottom: 2rem;
+}
+
+#musicContainer .album4 img{
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+#musicContainer .album4 h1 {
+  position: absolute;
+  color: white;
+  font-family: "GothamBook";
+  top: 30rem;
+}
+
+#musicContainer .album4 a {
+  position: absolute;
+  text-align: center;
+  width: 5rem;
+  height: auto;
+  top: 36rem;
+  left: 50%;
+  transform: translate(-50%,0);
+  color: #1BBA54;
+  text-decoration: none;
+  font-family: "GothamBook";
+  font-weight: bold;
+  font-size: 1.0rem;
+  border: 1px solid #1BBA54;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+
+#musicContainer .album4 a:hover {
+  background-color: #1BBA54;
+  color: white;
+  transition: 0.3s;
+}
+
+#musicContainer .album4Music {
+  position: absolute;
+  top: 40rem;
+  width: 100%;
+  height: auto;
+}
+
+#musicContainer .album4 .album4Music p{
+  color: white;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  font-family: "GothamBook";
+  border-bottom: 0.5px solid black;
 }
 
 #footer {
   position: relative;
   width: 100%;
   height: 35rem;
-  top: 3rem;
+  top: 24rem;
   border: 2px solid black;
   background-color: black;
   margin: 0;
@@ -297,12 +479,12 @@ html { font-size: 16px; }
 }
 
 body {
-  overflow-y: scroll;
-  overflow-x: hidden;
-  padding:0px;
-  margin: 0px;
-  background-color: black;
-  background-size: 100% 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding:0px;
+    margin: 0px;
+    background-color: black;
+    background-size: 100% 100%;
 }
 
 @media only screen and (min-width: 451px) and (max-width: 768px)
@@ -364,47 +546,6 @@ body {
   .topnav a:hover {
     color: #78de97;
   }
-
-  #memberContainer{
-    position: relative;
-    top: 4.3rem;
-    max-width: 100%;
-    text-align: center;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-
-  #memberContainer .members {
-    float: none;
-    display: inline-block;
-    width: 20rem;
-    height: 20rem;
-    margin: 0;
-    padding: 0;
-    transform: translate(0,0);
-    margin: 0 2rem;
-    margin-bottom: 5rem;
-  }
-
-  #memberContainer .dan {
-    position: absolute;
-    width: 20rem;
-    height: auto;
-    left: 0rem;
-  }
-
-  #memberContainer .wayne {
-    position: absolute;
-    width: 24rem;
-    height: auto;
-    left: -0.3rem;
-  }
-
-  body {
-    background-color: white;
-  }
 }
 
 @media only screen and (min-width: 769px)
@@ -458,72 +599,4 @@ body {
   .topnav {
     display: none;
   }
-
-  #memberContainer{
-    position: relative;
-    max-width: 100%;
-    text-align: center;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border-top: 1px solid white;
-    top: 3.25rem;
-  }
-
-  #memberContainer .members {
-    float: none;
-    display: inline-block;
-    width: 20rem;
-    height: 20rem;
-    margin: 0;
-    padding: 0;
-    transform: translate(0,0);
-    margin: 0 2rem;
-    margin-bottom: 5rem;
-  }
-
-  #memberContainer .dan {
-    position: absolute;
-    left: 0rem;
-    width: 20rem;
-    height: auto;
-  }
-
-  #memberContainer .wayne {
-    position: absolute;
-    left: -0.3rem;
-    width: 24rem;
-    height: auto;
-  }
-
-  #memberContainer .ben {
-    position: absolute;
-    left: -8rem;
-    width: 33rem;
-    height: auto;
-  }
-
-  #memberContainer .platzman {
-    position: absolute;
-    left: -0.5rem;
-    width: 25rem;
-    height: auto;
-  }
-
-  #history {
-    position: relative;
-    top: 3.2rem;
-  }
-
-  #history p {
-    position: relative;
-    font-size: 1.2rem;
-    margin: 0 5rem;
-  }
-
-  body {
-    background-color: black;
-  }
-
 }
