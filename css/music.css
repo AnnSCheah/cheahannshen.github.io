@@ -546,6 +546,156 @@ body {
   .topnav a:hover {
     color: #78de97;
   }
+
+  #musicContainer {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #musicContainer .album1{
+    max-width: 90%;
+    height: 90rem;
+  }
+
+  #musicContainer .album1 img {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    left: 5%;
+    top: 3rem;
+  }
+
+  #musicContainer .album1 h1 {
+    position: absolute;
+    left: 22%;
+    top: 4%;
+    font-size: 4vw;
+  }
+
+  #musicContainer .album1 a {
+    position: absolute;
+    left: 69%;
+    transform: translate(-69%,0);
+    top: 10rem;
+    margin: 2rem;
+    width: 10vw;
+    height: auto;
+    font-size: 2vw;
+  }
+
+  #musicContainer .album1Music {
+    position: absolute;
+    top: 25rem;
+  }
+
+  #musicContainer .album2{
+    max-width: 90%;
+    height: 77rem;
+  }
+
+  #musicContainer .album2 img {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    left: 5%;
+    top: 3rem;
+  }
+
+  #musicContainer .album2 h1 {
+    position: absolute;
+    left: 21%;
+    top: 4%;
+    font-size: 4vw;
+  }
+
+  #musicContainer .album2 a {
+    position: absolute;
+    left: 69%;
+    transform: translate(-69%,0);
+    top: 10rem;
+    margin: 2rem;
+    width: 10vw;
+    height: auto;
+    font-size: 2vw;
+  }
+
+  #musicContainer .album2Music {
+    position: absolute;
+    top: 25rem;
+  }
+
+  #musicContainer .album3{
+    max-width: 90%;
+    height: 116rem;
+  }
+
+  #musicContainer .album3 img {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    left: 5%;
+    top: 3rem;
+  }
+
+  #musicContainer .album3 h1 {
+    position: absolute;
+    left: 21%;
+    top: 4%;
+    font-size: 2.5vw;
+  }
+
+  #musicContainer .album3 a {
+    position: absolute;
+    left: 69%;
+    transform: translate(-69%,0);
+    top: 10rem;
+    margin: 2rem;
+    width: 10vw;
+    height: auto;
+    font-size: 2vw;
+  }
+
+  #musicContainer .album3Music {
+    position: absolute;
+    top: 25rem;
+  }
+
+  #musicContainer .album4{
+    max-width: 90%;
+    height: 94rem;
+  }
+
+  #musicContainer .album4 img {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    left: 5%;
+    top: 3rem;
+  }
+
+  #musicContainer .album4 h1 {
+    position: absolute;
+    left: 21%;
+    top: 4%;
+    font-size: 2.5vw;
+  }
+
+  #musicContainer .album4 a {
+    position: absolute;
+    left: 69%;
+    transform: translate(-69%,0);
+    top: 10rem;
+    margin: 2rem;
+    width: 10vw;
+    height: auto;
+    font-size: 2vw;
+  }
+
+  #musicContainer .album4Music {
+    position: absolute;
+    top: 25rem;
+  }
+
 }
 
 @media only screen and (min-width: 769px)
@@ -599,4 +749,158 @@ body {
   .topnav {
     display: none;
   }
+
+  #musicContainer {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #musicContainer .album1{
+    max-width: 60%;
+    height: 90rem;
+  }
+
+  #musicContainer .album1 img {
+    position: absolute;
+    max-width: 15rem;
+    max-height: 15rem;
+    left: 5%;
+    top: 3rem;
+  }
+
+  #musicContainer .album1 h1 {
+    position: absolute;
+    text-align: initial;
+    top: 6%;
+    left: 20rem;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5vw;
+  }
+
+  #musicContainer .album1 a {
+    position: absolute;
+    left: 20rem;
+    top: 10rem;
+    width: 6rem;
+    height: auto;
+    transform: translate(0,0);
+  }
+
+  #musicContainer .album1Music {
+    position: absolute;
+    top: 25rem;
+  }
+
+  #musicContainer .album2{
+    max-width: 60%;
+    height: 77rem;
+  }
+
+  #musicContainer .album2 img {
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    left: 5%;
+    top: 3rem;
+  }
+
+  #musicContainer .album2 h1 {
+    position: absolute;
+    text-align: initial;
+    top: 6%;
+    left: 20rem;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5vw;
+  }
+
+  #musicContainer .album2 a {
+    position: absolute;
+    left: 20rem;
+    top: 10rem;
+    width: 6rem;
+    height: auto;
+    transform: translate(0,0);
+  }
+
+  #musicContainer .album2Music {
+    position: absolute;
+    top: 25rem;
+  }
+
+  #musicContainer .album3{
+    max-width: 60%;
+    height: 116rem;
+  }
+
+  #musicContainer .album3 img {
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    left: 5%;
+    top: 3rem;
+  }
+
+  #musicContainer .album3 h1 {
+    position: absolute;
+    text-align: initial;
+    top: 6%;
+    left: 20rem;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5vw
+  }
+
+  #musicContainer .album3 a {
+    position: absolute;
+    left: 20rem;
+    top: 10rem;
+    width: 6rem;
+    height: auto;
+    transform: translate(0,0);
+  }
+
+  #musicContainer .album3Music {
+    position: absolute;
+    top: 25rem;
+  }
+
+  #musicContainer .album4{
+    max-width: 60%;
+    height: 94rem;
+  }
+
+  #musicContainer .album4 img {
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    left: 5%;
+    top: 3rem;
+  }
+
+  #musicContainer .album4 h1 {
+    position: absolute;
+    text-align: initial;
+    top: 6%;
+    left: 20rem;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5vw;
+  }
+
+  #musicContainer .album4 a {
+    position: absolute;
+    left: 20rem;
+    top: 10rem;
+    width: 6rem;
+    height: auto;
+    transform: translate(0,0);
+  }
+
+  #musicContainer .album4Music {
+    position: absolute;
+    top: 25rem;
+  }
+
 }
