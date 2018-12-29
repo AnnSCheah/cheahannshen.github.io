@@ -750,6 +750,7 @@ body {
     position: relative;
     display: block;
     left: -0.7rem;
+    margin-left: -1rem;
   }
 
   .topnav #myLinks {

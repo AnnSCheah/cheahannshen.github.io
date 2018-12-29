@@ -1,0 +1,694 @@
+html {
+  font-size : 13px;
+}
+
+@media (min-width: 451px) and (max-width: 768px){
+  html { font-size: 15px }
+}
+
+@media (min-width: 769px) {
+  html { font-size: 16px}
+}
+
+#wrapper {
+  background-color : #000000;
+  padding: 0.77rem;
+  margin: 0;
+  width: 100%;
+  height: 3rem;
+  z-index: 10;
+  position: fixed;
+}
+
+.mobileLogo {
+  display: block;
+  width: 17.5rem;
+  height: auto;
+  position: relative;
+  margin: 0px;
+  padding: 0;
+  left: 0%;
+  transform: translate(-50% 0);
+}
+
+.logo {
+  display: none;
+}
+
+.nav {
+  display: none;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+  display: block;
+  margin-left: -1rem;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.5rem;
+  font-family: "GothamBookItalic";
+  text-decoration: none;
+  display: block;
+  width: 6rem;
+}
+
+.topnav a.icon {
+  position: absolute;
+  display: block;
+  right: 0.5rem;
+  top: 0rem;
+  width: 2rem;
+}
+
+.topnav a:hover {
+  color: #78de97;
+}
+
+#tourContainer {
+  position: relative;
+  top: 4.5rem;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid white;
+}
+
+#tourContainer h1 {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: white;
+  font-family: "GothamBook";
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+#tourContainer .tour1 {
+  position: relative;
+  top: 10rem;
+  left: 50%;
+  transform: translate(-50%,0);
+  width: 90%;
+  height: 30rem;
+  border: 1px solid white;
+}
+
+#tourContainer .tour1 h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 2rem 0;
+  background-color: #E93E30;
+  border-bottom: 0.5px solid white;
+}
+
+#tourContainer .tour1 h2 {
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  text-align: center;
+  font-family: "GothamBookItalic";
+  font-size: 3.5em;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+#tourContainer .tour1 h3 {
+  position: absolute;
+  top: 85%;
+  transform: translate(0,-85%);
+  text-align: center;
+  font-family: "GothamBook";
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  color: white;
+}
+
+#tourContainer .tour1:hover {
+  background-color: #4B4C47;
+  transition: 0.3s;
+}
+
+#tourContainer .tour2 {
+  position: relative;
+  top: 10rem;
+  left: 50%;
+  transform: translate(-50%,0);
+  width: 90%;
+  height: 30rem;
+  margin-top: 5rem;
+  border: 1px solid white;
+}
+
+#tourContainer .tour2 h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 2rem 0;
+  background-color: #E93E30;
+  border-bottom: 0.5px solid white;
+}
+
+#tourContainer .tour2 h2 {
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  text-align: center;
+  font-family: "GothamBookItalic";
+  font-size: 3.5em;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+#tourContainer .tour2 h3 {
+  position: absolute;
+  top: 85%;
+  transform: translate(0,-85%);
+  text-align: center;
+  font-family: "GothamBook";
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  color: white;
+}
+
+#tourContainer .tour2:hover {
+  background-color: #4B4C47;
+  transition: 0.3s;
+}
+
+#tourContainer .tour3 {
+  position: relative;
+  top: 10rem;
+  left: 50%;
+  transform: translate(-50%,0);
+  width: 90%;
+  height: 30rem;
+  margin-top: 5rem;
+  border: 1px solid white;
+}
+
+#tourContainer .tour3 h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 2rem 0;
+  background-color: #E93E30;
+  border-bottom: 0.5px solid white;
+}
+
+#tourContainer .tour3 h2 {
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  text-align: center;
+  font-family: "GothamBookItalic";
+  font-size: 3.5em;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+#tourContainer .tour3 h3 {
+  position: absolute;
+  top: 85%;
+  transform: translate(0,-85%);
+  text-align: center;
+  font-family: "GothamBook";
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  color: white;
+}
+
+#tourContainer .tour3:hover {
+  background-color: #4B4C47;
+  transition: 0.3s;
+}
+
+#footer {
+  position: relative;
+  width: 100%;
+  height: 35rem;
+  top: 24rem;
+  border-top: 1px solid white;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+#footer .updates h1{
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  color: white;
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 1.8rem;
+  margin: 0;
+  transform: translate(-50%,0);
+}
+
+#footer .updates p{
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 65px;
+  color: white;
+  font-family: Helvetica;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 0;
+  width: 30rem;
+  transform: translate(-50%,0);
+}
+
+#footer .formUpdates {
+  position: absolute;
+  width: 33rem;
+  height: 2rem;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%,0);
+  margin: 0;
+  padding: 0;
+}
+
+#footer .updates input {
+  position: absolute;
+  left: 1.8rem;
+  width: 60%;
+  height: 1.875rem;
+  border: none;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  font-size: 1.2em;
+  margin: 0px;
+}
+
+#footer .updates button{
+  position: absolute;
+  left: 75%;
+  width: 6rem;
+  height: 2.06rem;
+  font-family: Helvetica;
+  font-weight: lighter;
+  border-radius: 5px;
+  margin: 0px;
+}
+
+#footer .search h1{
+  position: absolute;
+  text-align: center;
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 1.8rem;
+  color: white;
+  width: 25rem;
+  left: 50%;
+  top: 20rem;
+  margin: 0px;
+  transform: translate(-50%,0);
+}
+
+#footer .formSearch {
+  position: absolute;
+  width: 33rem;
+  height: 2rem;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%,0);
+}
+
+#footer .search input{
+  position: absolute;
+  left: 1.8rem;
+  width: 60%;
+  height: 1.875rem;
+  border: none;
+  border-radius: 5px;
+}
+
+#footer .search button{
+  position: absolute;
+  left: 75%;
+  height: 33px;
+  width: 6rem;
+  font-family: Helvetica;
+  border-radius: 5px;
+
+}
+
+#socialmedia {
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  top: 32rem;
+  padding:0;
+  margin:0;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  overflow: hidden;
+}
+
+#socialmedia .icon img{
+  display: inline-block;
+  width: 2rem;
+  height: auto;
+  margin: 0 0.93rem;
+}
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding:0px;
+    margin: 0px;
+    background-color: black;
+    background-size: 100% 100%;
+}
+
+@media only screen and (min-width: 451px) and (max-width: 768px)
+{
+  #wrapper {
+    padding: 0.67rem;
+    height: 3rem;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .mobileLogo {
+    display: block;
+    width: 17.5rem;
+    height: auto;
+    position: relative;
+    margin: 0px;
+    padding: 0;
+    left: 0%;
+    transform: translate(-50% 0);
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+    display: block;
+    left: -0.7rem;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav a {
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.5rem;
+    font-family: "GothamBookItalic";
+    text-decoration: none;
+    display: block;
+    width: 6rem;
+  }
+
+  .topnav a.icon {
+    position: absolute;
+    display: block;
+    right: 0.5rem;
+    top: 0rem;
+    width: 2rem;
+  }
+
+  .topnav a:hover {
+    color: #78de97;
+  }
+
+  #tourContainer .tour1 {
+    position: relative;
+    top: 10rem;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 90%;
+    height: 20rem;
+    border: 1px solid white;
+  }
+
+  #tourContainer .tour1 h1 {
+    text-align: center
+  }
+
+  #tourContainer .tour1 h2 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  #tourContainer .tour1 h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  #tourContainer .tour2 {
+    position: relative;
+    top: 10rem;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 90%;
+    height: 20rem;
+    border: 1px solid white;
+  }
+
+  #tourContainer .tour2 h1 {
+    text-align: center
+  }
+
+  #tourContainer .tour2 h2 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  #tourContainer .tour2 h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  #tourContainer .tour3 {
+    position: relative;
+    top: 10rem;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 90%;
+    height: 20rem;
+    border: 1px solid white;
+  }
+
+  #tourContainer .tour3 h1 {
+    text-align: center
+  }
+
+  #tourContainer .tour3 h2 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  #tourContainer .tour3 h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+}
+
+@media only screen and (min-width: 769px)
+{
+  #wrapper {
+    padding: 0.625rem;
+    height: 2rem;
+  }
+
+  .mobileLogo {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+    position: absolute;
+    top: -3px;
+    width:100px;
+    height:auto;
+    margin-left:15px;
+    padding-left:40px;
+  }
+
+  .nav {
+    display: inline;
+    float: right;
+    padding: 0;
+    margin: 0 60px;
+  }
+
+  .nav li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family : GothamBookItalic;
+    font-size: 1.3em;
+    padding: 10px 5px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+  }
+
+  .nav a:hover {
+    color: #78de97;
+  }
+
+  .topnav {
+    display: none;
+  }
+
+  #tourContainer {
+    position: relative;
+    top: 3.25rem;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid white;
+  }
+
+  #tourContainer .tour1 {
+    position: relative;
+    top: 10rem;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 90%;
+    height: 10rem;
+    border: 1px solid white;
+  }
+
+  #tourContainer .tour1 h1 {
+    text-align: center;
+    width: 10%;
+    font-size: 1.5rem;
+    top: 50%;
+    left: 5%;
+    transform: translate(-5%,-50%);
+    background-color: inherit;
+    border: none;
+  }
+
+  #tourContainer .tour1 h2 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  #tourContainer .tour1 h3 {
+    width: 20%;
+    font-size: 1rem;
+    margin: 0;
+    top: 50%;
+    left: 95%;
+    transform: translate(-95%,-50%);
+  }
+
+  #tourContainer .tour2 {
+    position: relative;
+    top: 10rem;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 90%;
+    height: 10rem;
+    border: 1px solid white;
+  }
+
+  #tourContainer .tour2 h1 {
+    text-align: center;
+    width: 10%;
+    font-size: 1.5rem;
+    top: 50%;
+    left: 5%;
+    transform: translate(-5%,-50%);
+    background-color: inherit;
+    border: none;
+  }
+
+  #tourContainer .tour2 h2 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  #tourContainer .tour2 h3 {
+    width: 20%;
+    font-size: 1rem;
+    margin: 0;
+    top: 50%;
+    left: 95%;
+    transform: translate(-95%,-50%);
+  }
+
+  #tourContainer .tour3 {
+    position: relative;
+    top: 10rem;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 90%;
+    height: 10rem;
+    border: 1px solid white;
+  }
+
+  #tourContainer .tour3 h1 {
+    text-align: center;
+    width: 10%;
+    font-size: 1.5rem;
+    top: 50%;
+    left: 5%;
+    transform: translate(-5%,-50%);
+    background-color: inherit;
+    border: none;
+  }
+
+  #tourContainer .tour3 h2 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  #tourContainer .tour3 h3 {
+    width: 20%;
+    font-size: 1rem;
+    margin: 0;
+    top: 50%;
+    left: 95%;
+    transform: translate(-95%,-50%);
+  }
+
+}
