@@ -69,6 +69,10 @@ html {
   width: 2rem;
 }
 
+#wrapper .selected {
+  color: #78de97
+}
+
 .topnav a:hover {
   color: #78de97;
 }

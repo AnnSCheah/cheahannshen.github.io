@@ -1,0 +1,797 @@
+html {
+  font-size: 13px;
+}
+
+@media (min-width: 769px){
+html { font-size: 16px; }
+}
+
+@media (min-width: 451px) and (max-width: 768px){
+  html { font-size: 15px; }
+}
+
+#wrapper {
+  background-color : #000000;
+  padding: 0.77rem;
+  margin: 0;
+  width: 100%;
+  height: 3rem;
+  z-index: 10;
+  position: fixed;
+}
+
+.mobileLogo {
+  display: block;
+  width: 17.5rem;
+  height: auto;
+  position: relative;
+  margin: 0px;
+  padding: 0;
+  left: 0%;
+  transform: translate(-50% 0);
+}
+
+.logo {
+  display: none;
+}
+
+.nav {
+  display: none;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+  display: block;
+  margin-left: -1rem;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.5rem;
+  font-family: "GothamBookItalic";
+  text-decoration: none;
+  display: block;
+  width: 6rem;
+}
+
+.topnav a.icon {
+  position: absolute;
+  display: block;
+  right: 0.5rem;
+  top: 0rem;
+  width: 2rem;
+}
+
+#wrapper .selected {
+  color: #78de97;
+}
+
+.topnav a:hover {
+  color: #78de97;
+}
+
+#merchContainer {
+  position: relative;
+  top: 4.5rem;
+  border-top: 1px solid white;
+}
+
+#merchContainer h1 {
+  position: absolute;
+  color: white;
+  margin: 3rem 0;
+  font-family: "GothamBook";
+  font-size: 1.8rem;
+  text-align: center;
+  width: 100%;
+}
+
+#merchContainer .item1 {
+  position: relative;
+  width: 95%;
+  height: auto;
+  top: 12rem;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+#merchContainer .item1 img {
+  width: 100%;
+  height: auto;
+}
+
+#merchContainer .item1 h2 {
+  position: absolute;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-family: "GothamBookItalic";
+  font-size: 1.5rem;
+}
+
+#merchContainer .item1 h3 {
+  position: absolute;
+  margin-top: 4rem;
+  color: white;
+  width:100%;
+  text-align: center;
+  font-family: "GothamBook";
+  font-size: 1.5rem;
+}
+
+#merchContainer .item1 img:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+#merchContainer .item1 h2:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+#merchContainer .item2 {
+  position: relative;
+  width: 95%;
+  height: auto;
+  top: 12rem;
+  margin-top: 10rem;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+#merchContainer .item2 img {
+  width: 100%;
+  height: auto;
+}
+
+#merchContainer .item2 h2 {
+  position: absolute;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-family: "GothamBookItalic";
+  font-size: 1.5rem;
+}
+
+#merchContainer .item2 h3 {
+  position: absolute;
+  margin-top: 4rem;
+  color: white;
+  width:100%;
+  text-align: center;
+  font-family: "GothamBook";
+  font-size: 1.5rem;
+}
+
+#merchContainer .item2 img:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+#merchContainer .item2 h2:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+#merchContainer .item3 {
+  position: relative;
+  width: 95%;
+  height: auto;
+  top: 12rem;
+  margin-top: 10rem;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+#merchContainer .item3 img {
+  width: 100%;
+  height: auto;
+}
+
+#merchContainer .item3 h2 {
+  position: absolute;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-family: "GothamBookItalic";
+  font-size: 1.5rem;
+}
+
+#merchContainer .item3 h3 {
+  position: absolute;
+  margin-top: 4rem;
+  color: white;
+  width:100%;
+  text-align: center;
+  font-family: "GothamBook";
+  font-size: 1.5rem;
+}
+
+#merchContainer .item3 img:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+#merchContainer .item3 h2:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+#merchContainer .item4 {
+  position: relative;
+  width: 95%;
+  height: auto;
+  top: 12rem;
+  margin-top: 10rem;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+#merchContainer .item4 img {
+  width: 100%;
+  height: auto;
+}
+
+#merchContainer .item4 h2 {
+  position: absolute;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-family: "GothamBookItalic";
+  font-size: 1.5rem;
+}
+
+#merchContainer .item4 h3 {
+  position: absolute;
+  margin-top: 4rem;
+  color: white;
+  width:100%;
+  text-align: center;
+  font-family: "GothamBook";
+  font-size: 1.5rem;
+}
+
+#merchContainer .item4 img:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+#merchContainer .item4 h2:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+#merchContainer .item5 {
+  position: relative;
+  width: 95%;
+  height: 55rem;
+  top: 12rem;
+  margin-top: 10rem;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+#merchContainer .item5 img {
+  width: 100%;
+  height: auto;
+}
+
+#merchContainer .item5 h2 {
+  position: absolute;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-family: "GothamBookItalic";
+  font-size: 1.5rem;
+}
+
+#merchContainer .item5 h3 {
+  position: absolute;
+  margin-top: 4rem;
+  color: white;
+  width:100%;
+  text-align: center;
+  font-family: "GothamBook";
+  font-size: 1.5rem;
+}
+
+#merchContainer .item5 img:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+#merchContainer .item5 h2:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+#footer {
+  position: relative;
+  width: 100%;
+  height: 35rem;
+  top: 3rem;
+  border-top: 1px solid white;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+
+}
+
+#footer .updates h1{
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  color: white;
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 1.8rem;
+  margin: 0;
+  transform: translate(-50%,0);
+}
+
+#footer .updates p{
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 65px;
+  color: white;
+  font-family: Helvetica;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 0;
+  width: 30rem;
+  transform: translate(-50%,0);
+}
+
+#footer .formUpdates {
+  position: absolute;
+  width: 33rem;
+  height: 2rem;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%,0);
+  margin: 0;
+  padding: 0;
+}
+
+#footer .updates input {
+  position: absolute;
+  left: 1.8rem;
+  width: 60%;
+  height: 1.875rem;
+  border: none;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  font-size: 1.2em;
+  margin: 0px;
+}
+
+#footer .updates button{
+  position: absolute;
+  left: 75%;
+  width: 6rem;
+  height: 2.06rem;
+  font-family: Helvetica;
+  font-weight: lighter;
+  border-radius: 5px;
+  margin: 0px;
+}
+
+#footer .search h1{
+  position: absolute;
+  text-align: center;
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 1.8rem;
+  color: white;
+  width: 25rem;
+  left: 50%;
+  top: 20rem;
+  margin: 0px;
+  transform: translate(-50%,0);
+}
+
+#footer .formSearch {
+  position: absolute;
+  width: 33rem;
+  height: 2rem;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%,0);
+}
+
+#footer .search input{
+  position: absolute;
+  left: 1.8rem;
+  width: 60%;
+  height: 1.875rem;
+  border: none;
+  border-radius: 5px;
+}
+
+#footer .search button{
+  position: absolute;
+  left: 75%;
+  height: 33px;
+  width: 6rem;
+  font-family: Helvetica;
+  border-radius: 5px;
+
+}
+
+#socialmedia {
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  top: 32rem;
+  padding:0;
+  margin:0;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  overflow: hidden;
+}
+
+#socialmedia .icon img{
+  display: inline-block;
+  width: 2rem;
+  height: auto;
+  margin: 0 0.93rem;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding:0px;
+  margin: 0px;
+  background-color: black;
+  background-size: 100% 100%;
+}
+
+@media only screen and (min-width: 451px) and (max-width: 768px)
+{
+  #wrapper {
+    padding: 0.67rem;
+    height: 3rem;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .mobileLogo {
+    display: block;
+    width: 17.5rem;
+    height: auto;
+    position: relative;
+    margin: 0px;
+    padding: 0;
+    left: 0%;
+    transform: translate(-50% 0);
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+    display: block;
+    left: -0.7rem;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav a {
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.5rem;
+    font-family: "GothamBookItalic";
+    text-decoration: none;
+    display: block;
+    width: 6rem;
+  }
+
+  .topnav a.icon {
+    position: absolute;
+    display: block;
+    right: 0.5rem;
+    top: 0rem;
+    width: 2rem;
+  }
+
+  .topnav a:hover {
+    color: #78de97;
+  }
+
+  #merchContainer {
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    padding-bottom: 10rem;
+  }
+
+  #merchContainer h1 {
+    margin-bottom: 0;
+  }
+
+  #merchContainer .item1 {
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    top: 6rem;
+    left: 0%;
+    transform: translate(0,0);
+    margin: 4rem 0.5rem;
+    padding: 0;
+  }
+
+  #merchContainer .item1 h2 {
+    font-size: 1.0rem;
+  }
+
+  #merchContainer .item1 h3 {
+    font-size: 2rem;
+  }
+
+  #merchContainer .item2 {
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    top: 6rem;
+    left: 0%;
+    transform: translate(0,0);
+    margin: 4rem 0.5rem;
+    padding: 0;
+  }
+
+  #merchContainer .item2 h2 {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  #merchContainer .item2 h3 {
+    font-size: 1rem;
+  }
+
+  #merchContainer .item3 {
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    top: 6rem;
+    left: 0%;
+    transform: translate(0,0);
+    margin: 4rem 0.5rem;
+    padding: 0;
+  }
+
+  #merchContainer .item3 h2 {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  #merchContainer .item3 h3 {
+    font-size: 1rem;
+  }
+
+  #merchContainer .item4 {
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    top: 6rem;
+    left: 0%;
+    transform: translate(0,0);
+    margin: 4rem 0.5rem;
+    padding: 0;
+  }
+
+  #merchContainer .item4 h2 {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  #merchContainer .item4 h3 {
+    font-size: 1rem;
+  }
+
+  #merchContainer .item5 {
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    top: 6rem;
+    left: 0%;
+    transform: translate(0,0);
+    margin: 4rem 0.5rem;
+    padding: 0;
+  }
+
+  #merchContainer .item5 h2 {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  #merchContainer .item5 h3 {
+    font-size: 1rem;
+  }
+
+  #footer {
+    top: 4.5rem;
+  }
+
+}
+
+@media only screen and (min-width: 769px)
+{
+  #wrapper {
+    padding: 0.625rem;
+    height: 2rem;
+  }
+
+  .mobileLogo {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+    position: absolute;
+    top: -3px;
+    width:100px;
+    height:auto;
+    margin-left:15px;
+    padding-left:40px;
+  }
+
+  .nav {
+    display: inline;
+    float: right;
+    padding: 0;
+    margin: 0 60px;
+  }
+
+  .nav li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family : GothamBookItalic;
+    font-size: 1.3em;
+    padding: 10px 5px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+  }
+
+  .nav a:hover {
+    color: #78de97;
+  }
+
+  .topnav {
+    display: none;
+  }
+
+  #merchContainer {
+    position: relative;
+    top: 3.25rem;
+    text-align: center;
+    border-top: 1px solid white;
+    margin-bottom: 10rem;
+}
+
+  #merchContainer h1 {
+    margin-bottom: 0;
+  }
+
+  #merchContainer .item1 {
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    top: 6rem;
+    left: 0%;
+    transform: translate(0,0);
+    margin: 4rem 4rem;
+    padding: 0;
+  }
+
+  #merchContainer .item1 h2 {
+    font-size: 1.5rem;
+  }
+
+  #merchContainer .item1 h3 {
+    font-size: 1.2rem;
+  }
+
+  #merchContainer .item2 {
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    top: 6rem;
+    left: 0%;
+    transform: translate(0,0);
+    margin: 4rem 4rem;
+    padding: 0;
+  }
+
+  #merchContainer .item2 h2 {
+    font-size: 1.0rem;
+    margin-bottom: 2rem;
+  }
+
+  #merchContainer .item2 h3 {
+    font-size: 1.2rem;
+  }
+
+  #merchContainer .item3 {
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    top: 6rem;
+    left: 0%;
+    transform: translate(0,0);
+    margin: 4rem 4rem;
+    padding: 0;
+  }
+
+  #merchContainer .item3 h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  #merchContainer .item3 h3 {
+    font-size: 1.2rem;
+  }
+
+  #merchContainer .item4 {
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    top: 6rem;
+    left: 0%;
+    transform: translate(0,0);
+    margin: 4rem 4rem;
+    padding: 0;
+  }
+
+  #merchContainer .item4 h2 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  #merchContainer .item4 h3 {
+    font-size: 1.2rem;
+  }
+
+  #merchContainer .item5 {
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    top: 6rem;
+    left: 0%;
+    transform: translate(0,0);
+    margin: 4rem 4rem;
+    padding: 0;
+  }
+
+  #merchContainer .item5 h2 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  #merchContainer .item5 h3 {
+    font-size: 1.2rem;
+  }
+
+}
