@@ -787,7 +787,7 @@ body {
   #footer .updates button {
     position: absolute;
     width: 6rem;
-    left: 75%;
+    left: 72%;
     padding: 0.5rem 0;
   }
 
@@ -808,13 +808,13 @@ body {
     position: absolute;
     width: 60%;
     left: 2rem;
-    padding: 0.5rem 0;
   }
 
   #footer .search button {
     position: absolute;
-    left: 75%;
+    left: 72%;
     width: 6rem;
+    padding: 0.5rem 0;
   }
 
   #socialmedia {
