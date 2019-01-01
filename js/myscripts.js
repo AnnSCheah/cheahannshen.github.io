@@ -1,3 +1,7 @@
+var slideIndex = 1;
+var slideIndexMobile = 1;
+var loginForm = document.getElementById('loginPopup');
+
 window.onload = function () {
   init ();
 }
@@ -6,8 +10,13 @@ function init() {
   console.log("Loaded");
 }
 
-var slideIndex = 1;
-var slideIndexMobile = 1;
+//If user cicks outside of login box, the box will close.
+window.onclick = function(event) {
+  if (event.target == loginForm) {
+    loginForm.style.display = "none";
+  }
+}
+
 showDivs(slideIndex);
 autoscroll();
 

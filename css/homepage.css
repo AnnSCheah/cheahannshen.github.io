@@ -71,10 +71,109 @@ html {
   display: none;
 }
 
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #78de97;
+  color: white;
+  padding: 0.875rem 1.25rem;
+  margin: 0.5rem 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.cancelBtn {
+  width: auto;
+  padding: 0.625rem 1.125rem;
+  background-color: #f44336;
+}
+
+.closeContainer {
+  text-align: center;
+  margin: 1rem 0 1rem 0;
+  position: relative;
+}
+
+.container {
+  padding: 1rem;
+}
+
+.container b {
+  font-family: "GothamBookItalic";
+}
+
+span.psw {
+  float: right;
+  padding-top: 1rem;
+}
+
+.register {
+  float:right;
+}
+
+.loginForm {
+  display: none;/* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Scroll if needed */
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 3.75rem;
+}
+
+.loginContent {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+.closeForm {
+  position: absolute;
+  right: 1.56rem;
+  top: 0;
+  color: #000;
+  font-size: 2.18rem;
+  font-weight: bold;
+}
+
+.closeForm:hover,
+.closeForm:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
 .banner {
   max-width:100%;
   position: relative;
-  top:3.25rem;
+  top: 3.25rem;
   left: -1px;
 }
 
@@ -360,7 +459,7 @@ html {
   color: white;
   font-family: Helvetica;
   font-weight: lighter;
-  font-size: 2.4em;
+  font-size: 2.4rem;
   margin: 0;
   transform: translate(-50%,0);
 }
@@ -372,7 +471,7 @@ html {
   top: 65px;
   color: white;
   font-family: Helvetica;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   font-style: italic;
   margin: 0;
   width: 30rem;
@@ -397,7 +496,7 @@ html {
   height: 1.875rem;
   border: none;
   border: solid 1px #ccc;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   font-size: 1.2em;
   margin: 0px;
 }
@@ -409,7 +508,7 @@ html {
   height: 2.06rem;
   font-family: Helvetica;
   font-weight: lighter;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   margin: 0px;
 }
 
@@ -448,8 +547,8 @@ html {
 #footer .search button{
   position: absolute;
   left: 25rem;
-  height: 33px;
-  width: 110px;
+  height: 2.06rem;
+  width: 6.875rem;
   font-family: Helvetica;
   border-radius: 5px;
 
@@ -545,6 +644,19 @@ body {
   .active {
     color: white;
   }
+
+  .loginContent {
+    width: 70%;
+  }
+
+  span.psw {
+   display: block;
+   float: none;
+ }
+
+ .cancelBtn {
+   width: 100%;
+ }
 
   #mobileBanner {
     display:block;
@@ -698,7 +810,6 @@ body {
 
   #footer .search button {
     position: absolute;
-    width: 100%;
     left: 75%;
   }
 
@@ -780,6 +891,10 @@ body {
 
   .topnav a:hover {
     color: #78de97;
+  }
+
+  .loginContent {
+    width: 70%;
   }
 
   .banner {

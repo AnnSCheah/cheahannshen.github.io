@@ -20,6 +20,7 @@
               <li><a href="tour.html">TOUR</a></li>
               <li><a href="merch.html">MERCH</a></li>
               <li><a href="about.html">ABOUT</a></li>
+              <li><a href="#" onclick="document.getElementById('loginPopup').style.display='block'">LOGIN</a></li>
             </ul>
           </nav>
           <div class="topnav">
@@ -29,11 +30,45 @@
               <a href="tour.html">TOUR</a>
               <a href="merch.html">MERCH</a>
               <a href="about.html">ABOUT</a>
+              <a href="#" onclick="document.getElementById('loginPopup').style.display='block'">LOGIN</a>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="dropDown()">
               <i class="fa fa-bars"></i>
             </a>
           </div>
+
+          <div id="loginPopup" class="loginForm">
+
+            <form class="loginContent animate">
+
+              <div class="closeContainer">
+                <span onclick="document.getElementById('loginPopup').style.display='none'" class="closeForm" title="Close Form">&times;</span>
+              </div>
+
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+
+                <span class="register">New user? Register <a href="#">here!</a></span>
+
+              </div>
+
+              <div class="container" style="background-color: #F1F1F1;">
+                <button type="button" onclick="document.getElementById('loginPopup').style.display='none'" class="cancelBtn">Cancel</button>
+                <span class="psw">Forget <a href="#">password?</a></span>
+              </div>
+            </form>
+
+          </div>
+
       </header>
     </div>
 

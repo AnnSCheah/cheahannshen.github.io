@@ -4,6 +4,8 @@
 
   <head>
     <title>Imagine Dragons | Unofficial Website</title>
+
+    <!--Linking the css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <link rel="stylesheet" type="text/css" href="css/homepage.css">
@@ -11,17 +13,23 @@
 
   <body>
 
+  <!--Header of the website-->
   <div id="wrapper">
     <header>
       <a href="#"><img class="logo" src="assets/logo5.png"></a>
+
+        <!--Making a nav bar-->
         <nav>
-        <ul class="nav">
+          <ul class="nav">
             <li><a href="index.html">HOME</a></li>
             <li><a href="tour.html">TOUR</a></li>
             <li><a href="merch.html">MERCH</a></li>
             <li><a href="about.html">ABOUT</a></li>
+            <li><a href="#" onclick="document.getElementById('loginPopup').style.display='block'">LOGIN</a></li>
           </ul>
         </nav>
+
+        <!--A different nav element for mobile/tablet-->
         <div class="topnav">
           <a href="#"><img class="mobileLogo" src="assets/logo6.png"></a>
           <div id="myLinks">
@@ -29,31 +37,71 @@
             <a href="tour.html">TOUR</a>
             <a href="merch.html">MERCH</a>
             <a href="about.html">ABOUT</a>
+            <a href="#" onclick="document.getElementById('loginPopup').style.display='block'">LOGIN</a>
           </div>
           <a href="javascript:void(0);" class="icon" onclick="dropDown()">
             <i class="fa fa-bars"></i>
           </a>
         </div>
     </header>
+
+    <div id="loginPopup" class="loginForm">
+
+      <form class="loginContent animate">
+
+        <div class="closeContainer">
+          <span onclick="document.getElementById('loginPopup').style.display='none'" class="closeForm" title="Close Form">&times;</span>
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+
+          <span class="register">New user? Register <a href="#">here!</a></span>
+
+        </div>
+
+        <div class="container" style="background-color: #F1F1F1;">
+          <button type="button" onclick="document.getElementById('loginPopup').style.display='none'" class="cancelBtn">Cancel</button>
+          <span class="psw">Forget <a href="#">password?</a></span>
+        </div>
+      </form>
+
+    </div>
+
   </div>
 
+
+  <!--The Banner for the homepage-->
   <div class="banner">
     <a href="#"><img class="mySlides" src="assets/banner7.jpg"></a>
     <a href="#"><img class="mySlides" src="assets/banner8.jpg"></a>
     <a href="#"><img class="mySlides" src="assets/banner9.jpg"></a>
 
+  <!--Icons to manually change the banner-->
     <a class="displayleft" onclick="plusDivs(-1)">&#10094;</a>
     <a class="displayright " onclick="plusDivs(+1)">&#10095;</a>
   </div>
 
+  <!--Mobile version of the banner-->
   <div id="mobileBanner">
     <a href="#"><img class="mobileSlides" src="assets/mobilebanner3.jpg"></a>
     <a href="#"><img class="mobileSlides" src="assets/mobilebanner2.jpg"></a>
     <a href="#"><img class="mobileSlides" src="assets/mobilebanner1.jpg"></a>
   </div>
 
+
   <section>
 
+    <!--Making a section in the homepage-->
     <div id="latestnews">
       <h1>LATEST NEWS</h1>
       <span class="news"><p>PLACEHOLDER TEXT</p></span>
@@ -63,44 +111,56 @@
       <span class="seemore"><a href="#">See more...</a></span>
     </div>
 
+
+    <!--The Merchandise section-->
     <div id="officialmerch">
       <h1>OFFICIAL MERCHANDISE</h1>
-      <a href="#"><span class="product">
+
+      <!--Each product is contained-->
+      <a href="merch.html"><span class="product">
         <img src="assets/evolve.jpg">
         <p>Evolve CD</br>$9.99</p>
       </span></a>
-      <a href="#"><span class="product">
+
+      <a href="merch.html"><span class="product">
         <img src="assets/smokeandmirrors.jpg">
         <p>Smoke + Mirrors CD</br>$8.99</p>
       </span></a>
-      <a href="#"><span class="product">
+
+      <a href="merch.html"><span class="product">
         <img src="assets/nightvisions.jpg">
         <p>Night Visions CD</br>$7.99</p>
       </span></a>
-      <a href="#"><span class="product">
+
+      <a href="merch.html"><span class="product">
         <img src="assets/nightvisions.jpg">
         <p>Night Visions CD</br>$7.99</p>
       </span></a>
-      <a href="#"><span class="product">
+
+      <a href="merch.html"><span class="product">
         <img src="assets/nightvisions.jpg">
         <p>Night Visions CD</br>$7.99</p>
       </span></a>
-      <a href="#"><span class="product">
+
+      <a href="merch.html"><span class="product">
         <img src="assets/nightvisions.jpg">
         <p>Night Visions CD</br>$7.99</p>
       </span></a>
-      <a href="#"><p class="seemore">See more...</p></a>
+
+      <a href="merch.html"><p class="seemore">See more...</p></a>
     </div>
 
+    <!--The music section-->
     <div id="music">
       <h1>MUSIC</h1>
-      <a href="#"><img class="album" src="assets/origins.png"></a>
-      <a href="#"><img class="album" src="assets/evolve.jpg"></a>
-      <a href="#"><img class="album" src="assets/smokeandmirrors.jpg"></a>
-      <a href="#"><img class="album" src="assets/nightvisions.jpg"></a>
+      <a href="music.html"><img class="album" src="assets/origins.png"></a>
+      <a href="music.html"><img class="album" src="assets/evolve.jpg"></a>
+      <a href="music.html"><img class="album" src="assets/smokeandmirrors.jpg"></a>
+      <a href="music.html"><img class="album" src="assets/nightvisions.jpg"></a>
       <span class="seemore"><a href="music.html">See more...</a></span>
     </div>
 
+    <!--The music video section-->
     <div id="officialvideo">
       <h1>OFFICIAL MUSIC VIDEO</h1>
       <iframe width="800" height="480" src="https://www.youtube.com/embed/fKopy74weus" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -109,25 +169,33 @@
 
   </section>
 
+  <!--The footer of the website-->
   <footer id="footer">
 
+    <!--Get update section-->
     <div class="updates">
       <h1>Get updates</h1>
       <p>about the latest news, merch, tour and music about<br>  Imagine Dragons.</p>
       <div class="formUpdates">
+
         <form><input type="text" name="email" placeholder="  E-mail Address"></form>
         <button type="button">Subscribe</button>
+
       </div>
     </div>
 
+    <!--The search section-->
     <div class="search">
       <h1>Looking for something?</h1>
+
       <div class="formSearch">
         <input type="text" name="search" placeholder="  Search">
         <button type="button">Search</button>
+
       </div>
     </div>
 
+    <!--List of social medias-->
     <div id="socialmedia">
       <a href="https://www.facebook.com/ImagineDragons/?ref=br_rs" target="_blank"><span class="icon"><img src="assets/facebookicon.png"></a></span>
       <a href="https://www.instagram.com/imaginedragons/?hl=en" target="_blank"><span class="icon"><img src="assets/instagramicon.png"></a></span>
@@ -138,6 +206,8 @@
 
   </footer>
 
+  <!--Link to the javascript-->
   <script src="js/myscripts.js"></script>
+
   </body>
 </html>
