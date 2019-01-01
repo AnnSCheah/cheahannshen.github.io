@@ -820,8 +820,9 @@ body {
   #socialmedia {
     position: absolute;
     top: 35rem;
-    width: 100%;
+    width: 80%;
     overflow: hidden;
+    margin-bottom: 5rem;
   }
 
   #socialmedia .icon img{
