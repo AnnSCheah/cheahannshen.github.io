@@ -68,12 +68,12 @@ console.log("show slides mobile working");
 
     if (n > x.length)
     {
-      slideIndex = 1;
+      slideIndexMobile = 1;
     }
 
     if (n < 1)
     {
-      slideIndex = x.length;
+      slideIndexMobile = x.length;
     }
 
     for (i = 0; i < x.length; i++)
@@ -81,7 +81,7 @@ console.log("show slides mobile working");
       x[i].style.display = "none";
     }
 
-    x[slideIndex - 1].style.display = "block";
+    x[slideIndexMobile - 1].style.display = "block";
 }
 
 function autoscroll()
@@ -115,12 +115,12 @@ function autoscroll2()
     x[i].style.display = "none";
   }
 
-  slideIndex++;
-  if (slideIndex >  x.length)
+  slideIndexMobile++;
+  if (slideIndexMobile >  x.length)
   {
-    slideIndex = 1;
+    slideIndexMobile = 1;
   }
 
-  x[slideIndex - 1].style.display = "block"
-  setTimeout(autoscroll, 3000);
+  x[slideIndexMobile - 1].style.display = "block"
+  setTimeout(autoscroll2, 3000);
 }
