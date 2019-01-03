@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <link rel="stylesheet" type="text/css" href="css/merch.css">
+    <link rel="stylesheet" type="text/css" href="css/easyui.css">
+    <link rel="stylesheet" type="text/css" href="css/icon.css">
+    <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+    <script src="js/jquery.easyui.min.js"></script>
   </head>
 
   <body>
@@ -75,60 +79,104 @@
     <div id="merchContainer">
       <h1>MERCHANDISE</h1>
 
-      <div class="item1">
-        <a href="#"><img src="assets/origins.png">
-        <h2>ORIGINS DELUXE CD</h2></a>
-        <h3>£12.99</h3>
-      </div>
+      <ul class="products">
 
-      <div class="item2">
-        <a href="#"><img src="assets/origins.png">
-        <h2>ORIGINS DELUXE CD + CASSETTE</h2></a>
-        <h3>£20.99</h3>
-      </div>
+        <li>
+          <a href="#" class="item1 item"><img src="assets/origins.png">
+            <div>
+              <p>ORIGINS DELUXE CD</p>
+              <p>£12.99</p>
+            </div>
+          </a>
+        </li>
 
-      <div class="item3">
-        <a href="#"><img src="assets/evolve.jpg">
-        <h2>EVOLVE DELUXE CD</h2></a>
-        <h3>£9.99</h3>
-      </div>
+        <li>
+          <a href="#" class="item2 item"><img src="assets/origins.png">
+            <div>
+              <p>ORIGINS CD + CASSETTE</p>
+              <p>£20.99</p>
+            </div>
+          </a>
+        </li>
 
-      <div class="item4">
-        <a href="#"><img src="assets/smokeandmirrors.jpg">
-        <h2>SMOKE & MIRRORS DELUXE CD</h2></a>
-        <h3>£9.99</h3>
-      </div>
+        <li>
+          <a href="#" class="item3 item"><img src="assets/evolve.jpg">
+            <div>
+              <p>EVOLVE DELUXE CD</p>
+              <p>£9.99</p>
+            </div>
+          </a>
+        </li>
 
-      <div class="item5">
-        <a href="#"><img src="assets/nightvisions.jpg">
-        <h2>NIGHT VISIONS DELUXE CD</h2></a>
-        <h3>£9.99</h3>
-      </div>
+        <li>
+          <a href="#" class="item4 item"><img src="assets/smokeandmirrors.jpg">
+            <div>
+              <p>SMOKE & MIRRORS DELUXE CD</p>
+              <p>£9.99</p>
+            </div>
+          </a>
+        </li>
 
-      <div class="item5">
-        <a href="#"><img src="assets/nightvisions.jpg">
-        <h2>NIGHT VISIONS DELUXE CD</h2></a>
-        <h3>£9.99</h3>
-      </div>
+        <li>
+          <a href="#" class="item5 item"><img src="assets/nightvisions.jpg">
+            <div>
+              <p>NIGHT VISIONS DELUXE CD</p>
+              <p>£9.99</p>
+            </div>
+          </a>
+        </li>
 
-      <div class="item5">
-        <a href="#"><img src="assets/nightvisions.jpg">
-        <h2>NIGHT VISIONS DELUXE CD</h2></a>
-        <h3>£9.99</h3>
-      </div>
+        <li>
+          <a href="#" class="item5 item"><img src="assets/nightvisions.jpg">
+            <div>
+              <p>NIGHT VISIONS DELUXE CD</p>
+              <p>£9.99</p>
+            </div>
+          </a>
+        </li>
 
-      <div class="item5">
-        <a href="#"><img src="assets/nightvisions.jpg">
-        <h2>NIGHT VISIONS DELUXE CD</h2></a>
-        <h3>£9.99</h3>
-      </div>
+        <li>
+          <a href="#" class="item5 item"><img src="assets/nightvisions.jpg">
+            <div>
+              <p>NIGHT VISIONS DELUXE CD</p>
+              <p>£9.99</p>
+            </div>
+          </a>
+        </li>
 
-      <div class="item5">
-        <a href="#"><img src="assets/nightvisions.jpg">
-        <h2>NIGHT VISIONS DELUXE CD</h2></a>
-        <h3>£9.99</h3>
-      </div>
+        <li>
+          <a href="#" class="item5 item"><img src="assets/nightvisions.jpg">
+            <div>
+              <p>NIGHT VISIONS DELUXE CD</p>
+              <p>£9.99</p>
+            </div>
+          </a>
+        </li>
 
+        <li>
+          <a href="#" class="item5 item"><img src="assets/nightvisions.jpg">
+            <div>
+              <p>NIGHT VISIONS DELUXE CD</p>
+              <p>£9.99</p>
+            </div>
+          </a>
+        </li>
+
+    </div>
+
+    <div class="basket">
+      <h1>SHOPPING BASKET</h2>
+      <table id="cartContent" fitColumns="true">
+          <thead>
+            <tr>
+              <th field="name" width=140>Name</th>
+              <th field="quantity" width=60 align="right">Quantity</th>
+              <th field="price" width=60 align="right">Price</th>
+            </tr>
+          </thead>
+      </table>
+      <p class="total">Total: £0</p>
+      <h2>Drop here to add to cart</h2>
     </div>
 
     <footer id="footer">
@@ -163,5 +211,6 @@
   </body>
 
 <script src="js/myscripts.js"></script>
+<script src="js/jQueryMain.js"></script>
 
 </html>

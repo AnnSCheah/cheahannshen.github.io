@@ -180,6 +180,7 @@ span.psw {
   position: relative;
   top: 4.5rem;
   border-top: 1px solid white;
+  text-align: center;
 }
 
 #merchContainer h1 {
@@ -192,223 +193,40 @@ span.psw {
   width: 100%;
 }
 
-#merchContainer .item1 {
+#merchContainer .products {
   position: relative;
-  width: 95%;
-  height: auto;
-  top: 12rem;
+  list-style: none;
+  padding: 0;
+  margin-top: 12rem;
+  width: 90%;
   left: 50%;
   transform: translate(-50%,0);
 }
 
-#merchContainer .item1 img {
+#merchContainer .products li {
+  display: inline;
+}
+
+#merchContainer .item{
+  display:block;
+  text-decoration:none;
+  margin-bottom: 4rem;
+}
+
+#merchContainer .item img{
+  border:1px solid #333;
   width: 100%;
   height: auto;
+  cursor: pointer;
 }
 
-#merchContainer .item1 h2 {
-  position: absolute;
-  color: white;
-  width: 100%;
-  text-align: center;
-  font-family: "GothamBookItalic";
-  font-size: 1.5rem;
-}
-
-#merchContainer .item1 h3 {
-  position: absolute;
-  margin-top: 4rem;
-  color: white;
-  width:100%;
-  text-align: center;
+#merchContainer .item p{
+  margin:0;
   font-family: "GothamBook";
   font-size: 1.5rem;
-}
-
-#merchContainer .item1 img:hover {
-  opacity: 0.7;
-  transition: 0.3s;
-}
-
-#merchContainer .item1 h2:hover {
-  opacity: 0.7;
-  transition: 0.3s;
-}
-
-#merchContainer .item2 {
-  position: relative;
-  width: 95%;
-  height: auto;
-  top: 12rem;
-  margin-top: 10rem;
-  left: 50%;
-  transform: translate(-50%,0);
-}
-
-#merchContainer .item2 img {
-  width: 100%;
-  height: auto;
-}
-
-#merchContainer .item2 h2 {
-  position: absolute;
+  text-align:center;
   color: white;
-  width: 100%;
-  text-align: center;
-  font-family: "GothamBookItalic";
-  font-size: 1.5rem;
-}
-
-#merchContainer .item2 h3 {
-  position: absolute;
-  margin-top: 4rem;
-  color: white;
-  width:100%;
-  text-align: center;
-  font-family: "GothamBook";
-  font-size: 1.5rem;
-}
-
-#merchContainer .item2 img:hover {
-  opacity: 0.7;
-  transition: 0.3s;
-}
-
-#merchContainer .item2 h2:hover {
-  opacity: 0.7;
-  transition: 0.3s;
-}
-
-#merchContainer .item3 {
-  position: relative;
-  width: 95%;
-  height: auto;
-  top: 12rem;
-  margin-top: 10rem;
-  left: 50%;
-  transform: translate(-50%,0);
-}
-
-#merchContainer .item3 img {
-  width: 100%;
-  height: auto;
-}
-
-#merchContainer .item3 h2 {
-  position: absolute;
-  color: white;
-  width: 100%;
-  text-align: center;
-  font-family: "GothamBookItalic";
-  font-size: 1.5rem;
-}
-
-#merchContainer .item3 h3 {
-  position: absolute;
-  margin-top: 4rem;
-  color: white;
-  width:100%;
-  text-align: center;
-  font-family: "GothamBook";
-  font-size: 1.5rem;
-}
-
-#merchContainer .item3 img:hover {
-  opacity: 0.7;
-  transition: 0.3s;
-}
-
-#merchContainer .item3 h2:hover {
-  opacity: 0.7;
-  transition: 0.3s;
-}
-
-#merchContainer .item4 {
-  position: relative;
-  width: 95%;
-  height: auto;
-  top: 12rem;
-  margin-top: 10rem;
-  left: 50%;
-  transform: translate(-50%,0);
-}
-
-#merchContainer .item4 img {
-  width: 100%;
-  height: auto;
-}
-
-#merchContainer .item4 h2 {
-  position: absolute;
-  color: white;
-  width: 100%;
-  text-align: center;
-  font-family: "GothamBookItalic";
-  font-size: 1.5rem;
-}
-
-#merchContainer .item4 h3 {
-  position: absolute;
-  margin-top: 4rem;
-  color: white;
-  width:100%;
-  text-align: center;
-  font-family: "GothamBook";
-  font-size: 1.5rem;
-}
-
-#merchContainer .item4 img:hover {
-  opacity: 0.7;
-  transition: 0.3s;
-}
-
-#merchContainer .item4 h2:hover {
-  opacity: 0.7;
-  transition: 0.3s;
-}
-
-#merchContainer .item5 {
-  position: relative;
-  width: 95%;
-  height: 55rem;
-  top: 12rem;
-  margin-top: 10rem;
-  left: 50%;
-  transform: translate(-50%,0);
-}
-
-#merchContainer .item5 img {
-  width: 100%;
-  height: auto;
-}
-
-#merchContainer .item5 h2 {
-  position: absolute;
-  color: white;
-  width: 100%;
-  text-align: center;
-  font-family: "GothamBookItalic";
-  font-size: 1.5rem;
-}
-
-#merchContainer .item5 h3 {
-  position: absolute;
-  margin-top: 4rem;
-  color: white;
-  width:100%;
-  text-align: center;
-  font-family: "GothamBook";
-  font-size: 1.5rem;
-}
-
-#merchContainer .item5 img:hover {
-  opacity: 0.7;
-  transition: 0.3s;
-}
-
-#merchContainer .item5 h2:hover {
-  opacity: 0.7;
-  transition: 0.3s;
+  cursor: pointer;
 }
 
 #footer {
@@ -633,6 +451,32 @@ body {
     margin-bottom: 0;
   }
 
+  #merchContainer .products {
+    padding: 0;
+    margin-top: 6rem;
+  }
+
+  #merchContainer .item{
+    display:block;
+    text-decoration:none;
+  }
+
+  #merchContainer .item img{
+    border:1px solid #333;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+
+  #merchContainer .item p{
+    margin:0;
+    font-family: "GothamBook";
+    font-size: 0.8rem;
+    text-align:center;
+    color: white;
+    cursor: pointer;
+  }
+
   #merchContainer .item1 {
     display: inline-block;
     width: 30%;
@@ -642,14 +486,6 @@ body {
     transform: translate(0,0);
     margin: 4rem 0.5rem;
     padding: 0;
-  }
-
-  #merchContainer .item1 h2 {
-    font-size: 1.0rem;
-  }
-
-  #merchContainer .item1 h3 {
-    font-size: 2rem;
   }
 
   #merchContainer .item2 {
@@ -663,15 +499,6 @@ body {
     padding: 0;
   }
 
-  #merchContainer .item2 h2 {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  #merchContainer .item2 h3 {
-    font-size: 1rem;
-  }
-
   #merchContainer .item3 {
     display: inline-block;
     width: 30%;
@@ -681,15 +508,6 @@ body {
     transform: translate(0,0);
     margin: 4rem 0.5rem;
     padding: 0;
-  }
-
-  #merchContainer .item3 h2 {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  #merchContainer .item3 h3 {
-    font-size: 1rem;
   }
 
   #merchContainer .item4 {
@@ -703,15 +521,6 @@ body {
     padding: 0;
   }
 
-  #merchContainer .item4 h2 {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  #merchContainer .item4 h3 {
-    font-size: 1rem;
-  }
-
   #merchContainer .item5 {
     display: inline-block;
     width: 30%;
@@ -721,15 +530,6 @@ body {
     transform: translate(0,0);
     margin: 4rem 0.5rem;
     padding: 0;
-  }
-
-  #merchContainer .item5 h2 {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  #merchContainer .item5 h3 {
-    font-size: 1rem;
   }
 
   #footer {
@@ -805,6 +605,7 @@ body {
   #merchContainer {
     position: relative;
     top: 3.25rem;
+    width: 80%;
     text-align: center;
     border-top: 1px solid white;
     margin-bottom: 10rem;
@@ -812,6 +613,29 @@ body {
 
   #merchContainer h1 {
     margin-bottom: 0;
+  }
+
+  #merchContainer .products {
+    padding: 0;
+  }
+
+  #merchContainer .item{
+    display:block;
+    text-decoration:none;
+  }
+
+  #merchContainer .item img{
+    border:1px solid #333;
+    width: 100%;
+    height: auto;
+  }
+
+  #merchContainer .item p{
+    margin:0;
+    font-family: "GothamBook";
+    font-size: 0.8rem;
+    text-align:center;
+    color: white;
   }
 
   #merchContainer .item1 {
@@ -825,14 +649,6 @@ body {
     padding: 0;
   }
 
-  #merchContainer .item1 h2 {
-    font-size: 1.5rem;
-  }
-
-  #merchContainer .item1 h3 {
-    font-size: 1.2rem;
-  }
-
   #merchContainer .item2 {
     display: inline-block;
     width: 20%;
@@ -842,15 +658,6 @@ body {
     transform: translate(0,0);
     margin: 4rem 4rem;
     padding: 0;
-  }
-
-  #merchContainer .item2 h2 {
-    font-size: 1.0rem;
-    margin-bottom: 2rem;
-  }
-
-  #merchContainer .item2 h3 {
-    font-size: 1.2rem;
   }
 
   #merchContainer .item3 {
@@ -864,15 +671,6 @@ body {
     padding: 0;
   }
 
-  #merchContainer .item3 h2 {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-  }
-
-  #merchContainer .item3 h3 {
-    font-size: 1.2rem;
-  }
-
   #merchContainer .item4 {
     display: inline-block;
     width: 20%;
@@ -882,15 +680,6 @@ body {
     transform: translate(0,0);
     margin: 4rem 4rem;
     padding: 0;
-  }
-
-  #merchContainer .item4 h2 {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-  }
-
-  #merchContainer .item4 h3 {
-    font-size: 1.2rem;
   }
 
   #merchContainer .item5 {
@@ -904,13 +693,41 @@ body {
     padding: 0;
   }
 
-  #merchContainer .item5 h2 {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+  #merchContainer .item {
   }
 
-  #merchContainer .item5 h3 {
+  .basket {
+    position: fixed;
+    top: 3.25rem;
+    right: 0;
+    width: 20%;
+    height: auto;
+    background-color: #5F5F5F;
+    border-top: 1px solid white;
+  }
+
+  .basket h1 {
+    text-align: center;
+    color: white;
+    font-family: "GothamBookItalic";
     font-size: 1.2rem;
   }
 
+  #cartContent th{
+    font-family: "GothamBook";
+    color: white;
+  }
+
+  .total {
+    font-family: "GothamBook";
+    color: white;
+    padding-left: 0.5rem;
+  }
+
+  .basket h2 {
+    font-family: "GothamBook";
+    font-size: 1rem;
+    color: white;
+    padding-left: 0.5rem;
+  }
 }

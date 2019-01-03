@@ -106,7 +106,6 @@ function autoscroll()
 
 function autoscroll2()
 {
-  console.log("autoscrollMobile working");
   var i;
   var x = document.getElementsByClassName("mobileSlides");
 
