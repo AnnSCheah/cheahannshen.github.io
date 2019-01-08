@@ -3,8 +3,12 @@ $(function(){
 
   console.log("Jquery loaded.");
 
-  var data = {"total":0,"rows": []}
+	var data = {"total":0,"rows":[]};
   var totalCost = 0;
+
+  $('#cartContent').datagrid({
+  singleSelect:true
+  });
 
   $('.item').draggable({
     revert: true,
@@ -36,7 +40,7 @@ $(function(){
     function add(){
       for(var i = 0; i < data.total; i++){
         var row = data.rows[i];
-        if (row.name === name) {
+        if (row.name == name) {
           row.quantity += 1;
           return;
         }
@@ -51,6 +55,6 @@ $(function(){
     add();
     totalCost += price;
     $('#cartContent').datagrid('loadData', data);
-    $('div.basket .total').html('Total: £'+ totalCost);
+    $('div.basket .total').html('Total: £'+ totalCost.toFixed(2));
   }
 });
