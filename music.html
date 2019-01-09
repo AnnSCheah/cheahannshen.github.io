@@ -4,6 +4,8 @@
 
   <head>
     <title>Imagine Dragons | Unofficial Website</title>
+
+    <!--Linking the css/jquery/fonts-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <link rel="stylesheet" type="text/css" href="css/music.css">
@@ -12,9 +14,12 @@
 
   <body>
 
+    <!-- The header of the website -->
     <div id="wrapper">
       <header>
         <a href="index.html"><img class="logo" src="assets/logo5.png"></a>
+
+          <!-- The navigation bar -->
           <nav>
           <ul class="nav">
               <li><a href="index.html">HOME</a></li>
@@ -24,6 +29,8 @@
               <li><a href="#" onclick="document.getElementById('loginPopup').style.display='block'">LOGIN</a></li>
             </ul>
           </nav>
+
+          <!-- The navigation bar for mobile/tablet -->
           <div class="topnav">
             <a href="index.html"><img class="mobileLogo" src="assets/logo6.png"></a>
             <div id="myLinks">
@@ -38,6 +45,7 @@
             </a>
           </div>
 
+          <!-- Login pop up window -->
           <div id="loginPopup" class="loginForm">
 
             <form class="loginContent animate">
@@ -73,9 +81,11 @@
       </header>
     </div>
 
+    <!-- Container to hold all the music -->
     <div id="musicContainer">
       <h1>MUSIC</h1>
 
+      <!-- Div to hold the first album -->
       <div class="album1">
         <img src="assets/origins.png">
         <h1>ORIGINS (DELUXE)</h1>
@@ -99,6 +109,7 @@
         </div>
       </div>
 
+      <!-- Div that holds the 2nd album -->
       <div class="album2">
         <img src="assets/evolve.jpg">
         <h1>EVOLVE</h1>
@@ -119,6 +130,7 @@
         </div>
       </div>
 
+      <!-- Div that holds the 3rd album -->
       <div class="album3">
         <img src="assets/smokeandmirrors.jpg">
         <h1>SMOKE & MIRROR (DELUXE)</h1>
@@ -148,6 +160,7 @@
         </div>
       </div>
 
+      <!-- div that holds the 4th album. -->
       <div class="album4">
         <img src="assets/nightvisions.jpg">
         <h1>NIGHT VISIONS (DELUXE)</h1>
@@ -173,6 +186,7 @@
       </div>
     </div>
 
+    <!-- The footer of the website -->
     <footer id="footer">
 
       <div class="updates">
@@ -192,6 +206,7 @@
         </div>
       </div>
 
+      <!-- The social media section in the footer -->
       <div id="socialmedia">
         <a href="https://www.facebook.com/ImagineDragons/?ref=br_rs" target="_blank"><span class="icon"><img src="assets/facebookicon.png"></a></span>
         <a href="https://www.instagram.com/imaginedragons/?hl=en" target="_blank"><span class="icon"><img src="assets/instagramicon.png"></a></span>
@@ -204,5 +219,6 @@
 
   </body>
 
+  <!-- Linking the javascript -->
   <script src="js/myscripts.js"></script>
 </html>

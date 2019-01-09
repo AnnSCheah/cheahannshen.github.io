@@ -1,3 +1,4 @@
+/* Setting the font-size for each media query */
 html {
   font-size: 16px;
 }
@@ -11,20 +12,23 @@ html {
   html { font-size: 13px; }
 }
 
+/* The header of the website */
 #wrapper {
-  background-color : #000000;
+  background-color : #000000; /* Background color set to black */
   padding:0.625rem;
   margin:0;
-  width:100%;
+  width: 100%; /* Width set to 100% so it takes 100% of the space */
   height:2rem;
-  z-index: 10;
+  z-index: 99; /* z-index set to 99 to ensure it always stay on top of other elements */
   position: fixed;
 }
 
+/* Mobile logo display set to none because media query is not set for mobile */
 .mobileLogo {
   display: none;
 }
 
+/* The logo in the header */
 .logo {
   position: absolute;
   top: -3px;
@@ -43,34 +47,35 @@ html {
 }
 
 .nav li {
-  display: inline;
+  display: inline; /* The li element will be displayed inline instead of block */
   padding: 0;
   margin: 0;
 
 }
 
 .nav a {
-  text-decoration: none;
-  color: #ffffff;
-  font-family : GothamBookItalic;
+  text-decoration: none; /* To remove the underline for a element */
+  color: #ffffff; /* Color set to white */
+  font-family : GothamBookItalic; /* A custom font that was linked in the html */
   font-size: 1.3em;
   padding: 10px 5px;
   margin: 0 15px;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease; /* The trasition for the hover */
 }
 
 .nav a:hover {
-  color: #78de97;
+  color: #78de97; /* On hover, the text color will change */
 }
 
 .topnav {
-  display: none;
+  display: none; /* Topnav is the hamburger menu for mobile/tablet media queries, therefore set to none. */
 }
 
 #mobileBanner {
-  display: none;
+  display: none; /* Mobile banner display is set to none */
 }
 
+/* The input for the login form */
 input[type=text], input[type=password] {
   width: 100%;
   padding: 0.75rem 1.25rem;
@@ -86,33 +91,36 @@ button {
   padding: 0.875rem 1.25rem;
   margin: 0.5rem 0;
   border: none;
-  cursor: pointer;
+  cursor: pointer; /* Cursor will change to a pointer when mouse hovers over the button */
   width: 100%;
 }
 
 button:hover {
-  opacity: 0.8;
-  transition: 0.3s;
+  opacity: 0.8; /* Changes to opacity on hover */
+  transition: 0.3s; /* Has an animation time on hover */
 }
 
+/* The cancel button for the login form */
 .cancelBtn {
   width: auto;
   padding: 0.625rem 1.125rem;
   background-color: #f44336;
 }
 
+/* The button to close the login form container */
 .closeContainer {
   text-align: center;
   margin: 1rem 0 1rem 0;
   position: relative;
 }
 
+/* Container for the login form */
 .container {
   padding: 1rem;
 }
 
 .container b {
-  font-family: "GothamBookItalic";
+  font-family: "GothamBookItalic"; /* Changes the font of the text */
 }
 
 span.psw {
@@ -157,9 +165,10 @@ span.psw {
 .closeForm:hover,
 .closeForm:focus {
   color: red;
-  cursor: pointer;
+  cursor: pointer; /* On hover, changes the cursor to a pointer */
 }
 
+/* Animation for bringing up the login box */
 .animate {
   -webkit-animation: animatezoom 0.6s;
   animation: animatezoom 0.6s;
@@ -170,6 +179,7 @@ span.psw {
   to {transform: scale(1)}
 }
 
+/* The banner container */
 .banner {
   max-width:100%;
   position: relative;
@@ -177,8 +187,9 @@ span.psw {
   left: -1px;
 }
 
+/* The banner pictures */
 .mySlides {
-    display: none;
+    display: none; /* Hidden by default (Javscript involved) */
     position: relative;
     max-width: 100%;
     width: 100%;
@@ -187,6 +198,7 @@ span.psw {
     transform: translate(-50%, 0);
 }
 
+/*The 'button' to change the banner slides manually */
 .displayleft {
   position: absolute;
   color: white;
@@ -200,11 +212,12 @@ span.psw {
 }
 
 .displayleft:hover {
-  color: black;
+  color: black; /* On hover, changes the color */
   text-shadow: 1px 1px 2px white;
   cursor: pointer;
 }
 
+/* The 'button' to change the slide manually */
 .displayright {
   position: absolute;
   color: white;
@@ -218,13 +231,14 @@ span.psw {
 }
 
 .displayright:hover {
-  color: black;
+  color: black; /* Changes the color to black on hover */
   text-shadow: 1px 1px 2px white;
   cursor: pointer;
 }
 
+/*The latest news section of the website */
 #latestnews{
-  position: relative;
+  position: relative; /* Position set to relative */
   background-color: rgba(255 , 255 ,255 , 0.1);
   text-align: center;
   left: 0px;
@@ -233,11 +247,12 @@ span.psw {
   height: 35rem;
   border: none;
   border-bottom: 1px solid white;
-  overflow: hidden;
+  overflow: hidden; /* Overflow hidden to hide the overflown content */
 }
 
+/* The h1 of the latest news section */
 #latestnews h1{
-  position: absolute;
+  position: absolute; /* Position set to absolute relative to the parent container */
   text-align: center;
   font-family: "GothamBook";
   font-size: 2em;
@@ -249,10 +264,10 @@ span.psw {
 }
 
 #latestnews .news p{
-  display: inline-block;
+  display: inline-block; /* Display set to inline-block so it will be centered */
   color: white;
-  width: 300px;
-  height: 300px;
+  width: 18.75rem;
+  height: 18.75rem;
   text-align: center;
   border: 1px solid white;
   margin: 0 2rem;
@@ -266,17 +281,18 @@ span.psw {
   transform: translate(-50%,0);
   font-size: 1rem;
   font-family: GothamBook;
-  text-decoration: none;
+  text-decoration: none; /* To remove the underline for a elements */
   color: white;
 }
 
 #latestnews .seemore a:hover {
-  color: #78de97;
+  color: #78de97; /* On hover, changes the text color */
 }
 
+/* The merchandise section */
 #officialmerch {
-  position: relative;
-  text-align: center;
+  position: relative; /* Position set to relative */
+  text-align: center; /* text align to center to align the content */
   top: 3.2rem;
   left: 50%;
   transform: translate(-50%,0);
@@ -285,11 +301,11 @@ span.psw {
   background-color: rgba(255 ,255 ,255 ,0.1);
   padding-left: 1px;
   border-bottom: 1px solid white;
-  overflow: hidden;
+  overflow: hidden; /* Overflow set to hidden to hide overflown content */
 }
 
 #officialmerch h1{
-  position: absolute;
+  position: absolute; /* Position set to absolute relative to its parent container */
   color: white;
   text-decoration: none;
   font-size:2rem;
@@ -302,13 +318,13 @@ span.psw {
 }
 
 #officialmerch .product {
-  display: inline-block;
+  display: inline-block; /* display set to inline-block so will be aligned in the center */
   margin: 8rem 1rem;
 }
 
 #officialmerch .product:hover {
-  opacity: 0.7;
-  transition: 0.3s;
+  opacity: 0.7; /*Changes the opacity to 0.7 */
+  transition: 0.3s; /* Has an animation duration during the hover */
 }
 
 #officialmerch .product img {
@@ -344,20 +360,21 @@ span.psw {
   color: #78de97;
 }
 
+/* The music container */
 #music {
-  position: relative;
+  position: relative; /* Position set to relative */
   border: none;
-  text-align: center;
+  text-align: center; /* Text align set to center to align content in the container */
   width: 100%;
   height: 500px;
   top: 3.2rem;
   background-color: rgba(255 ,255 ,255 , 0.1);
   border-bottom: 1px solid white;
-  overflow: hidden;
+  overflow: hidden; /* Overflow set to hidden to hide overflown content */
 }
 
 #music h1 {
-  position: absolute;
+  position: absolute; /* Position set to absolute relative to its parent container */
   color: white;
   width: 100%;
   text-align: center;
@@ -368,7 +385,7 @@ span.psw {
 }
 
 #music .album {
-  display: inline-block;
+  display: inline-block; /* To align the contents to the center */
   width: 300px;
   height: 300px;
   margin: 0 2rem;
@@ -376,8 +393,8 @@ span.psw {
 }
 
 #music .album:hover{
-  opacity: 0.5;
-  transition: 0.3s;
+  opacity: 0.5; /* Sets the opacity to 0.5 on hover */
+  transition: 0.3s; /* Has a trasition duration of 0.3s */
 }
 
 #music .seemore a{
@@ -387,16 +404,16 @@ span.psw {
   transform: translate(-50%,0);
   font-size: 1rem;
   font-family: GothamBook;
-  text-decoration: none;
+  text-decoration: none; /* Removes the underline in the a element */
   color: white;
 }
 
 #music .seemore a:hover {
-  color:#78de97;
+  color:#78de97; /* On hover, changes the text color */
 }
 
 #officialvideo {
-  position: relative;
+  position: relative; /* Position set to relative */
   top: 3.2rem;
   max-width: 100%;
   height: 45rem;
@@ -405,7 +422,7 @@ span.psw {
 }
 
 #officialvideo h1 {
-  position: absolute;
+  position: absolute; /* Position set to absolute relative to its parent container */
   text-align: center;
   color: white;
   text-decoration: none;
@@ -433,16 +450,17 @@ span.psw {
   transform: translate(-50%,0);
   font-family: "GothamBook";
   font-size: 1rem;
-  text-decoration: none;
+  text-decoration: none; /* Removes the underline in the a element */
   color: white;
 }
 
 #officialvideo .seemore a:hover{
-  color:#78de97;
+  color:#78de97; /* Changes the color of the text on hover */
 }
 
+/* The footer of the website */
 #footer {
-  position: relative;
+  position: relative; /* Position set to relative */
   width: 100%;
   height: 37.5rem;
   top: -1px;
@@ -453,7 +471,7 @@ span.psw {
 }
 
 #footer .updates h1{
-  position: absolute;
+  position: absolute; /* Position set to absolute relative to its parent container */
   left: 50%;
   top: 20px;
   color: white;
@@ -554,6 +572,7 @@ span.psw {
 
 }
 
+/* The social media section */
 #socialmedia {
   position: absolute;
   left: 50%;
@@ -574,13 +593,14 @@ span.psw {
 body {
   max-width: 100%;
   overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-x: hidden; /* Prevents the website from scrolling horizontally */
   padding:0px;
   margin: 0px;
   background-color: black;
   background-size: 100% 100%;
 }
 
+/* Media Query for mobile */
 @media only screen and (max-width: 450px)
 {
   #wrapper {
@@ -589,11 +609,11 @@ body {
   }
 
   .logo{
-    display: none;
+    display: none; /* The logo display for desktop is now set to none */
   }
 
   .mobileLogo {
-    display: block;
+    display: block;  /* Display set to block */
     width: 17.5rem;
     height: auto;
     position: relative;
@@ -604,19 +624,19 @@ body {
   }
 
   .nav {
-    display: none;
+    display: none; /* Navigation bar for desktop set to none */
   }
 
   .topnav {
     overflow: hidden;
     background-color: black;
     position: relative;
-    display: block;
+    display: block; /* Set to block for mobile */
     margin-left: -1rem;
   }
 
   .topnav #myLinks {
-    display: none;
+    display: none; /* Display set to none by default (Javscript involved) */
   }
 
   .topnav a {
@@ -624,7 +644,7 @@ body {
     padding: 0.8rem 1.5rem;
     font-size: 1.5rem;
     font-family: "GothamBookItalic";
-    text-decoration: none;
+    text-decoration: none; /* Removes the underline for a elements */
     display: block;
     width: 6rem;
   }
@@ -667,17 +687,17 @@ body {
   }
 
   .mobileSlides {
-    display: none;
+    display: none; /* Display set to none by default (Javscript involved) */
     width: 100%;
   }
 
   .banner {
-    display: none;
+    display: none; /* Desktop version banner display set to none for mobile */
   }
 
   #latestnews
   {
-    height: 150em;
+    height: 150rem;
     border-bottom: 1px solid black;
     border-top: 1px solid white;
   }
@@ -839,6 +859,7 @@ body {
   }
 }
 
+/* Media query for tablets */
 @media only screen and (min-width: 451px) and (max-width: 768px)
 {
   #wrapper {
@@ -847,11 +868,11 @@ body {
   }
 
   .logo{
-    display: none;
+    display: none; /* Display for desktop version set to none */
   }
 
   .mobileLogo {
-    display: block;
+    display: block; /* Set to block */
     width: 17.5rem;
     height: auto;
     position: relative;
@@ -862,11 +883,11 @@ body {
   }
 
   .nav {
-    display: none;
+    display: none; /* navigation for desktop display is set to none */
   }
 
   .topnav {
-    overflow: hidden;
+    overflow: hidden; /* Overflow is set to hidden */
     background-color: black;
     position: relative;
     display: block;

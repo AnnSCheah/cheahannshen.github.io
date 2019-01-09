@@ -19,6 +19,7 @@ html { font-size: 16px; }
   z-index: 11;
   border-bottom: 1px solid white;
   position: fixed;
+  top: 0;
 }
 
 .mobileLogo {
@@ -179,18 +180,20 @@ span.psw {
 
 #merchContainer {
   position: relative;
-  top: 4.5rem;
+  top: 0rem;
   text-align: center;
 }
 
 #merchContainer h1 {
   position: absolute;
+  top: -7rem;
   color: white;
   margin: 3rem 0;
   font-family: "GothamBook";
   font-size: 1.8rem;
   text-align: center;
   width: 100%;
+  margin-bottom: 5rem;
 }
 
 #merchContainer .products {
@@ -227,6 +230,10 @@ span.psw {
   text-align:center;
   color: white;
   cursor: pointer;
+}
+
+.basket {
+  display: none;
 }
 
 #footer {
@@ -441,6 +448,7 @@ body {
 
   #merchContainer {
     text-align: center;
+    top: 4.5rem;
     max-width: 100%;
     width: 100%;
     height: auto;
@@ -613,6 +621,7 @@ body {
 
   #merchContainer h1 {
     margin-bottom: 0;
+    top: 3rem;
   }
 
   #merchContainer .products {
@@ -697,6 +706,7 @@ body {
   }
 
   .basket {
+    display: block;
     position: fixed;
     top: 3.25rem;
     right: 0;

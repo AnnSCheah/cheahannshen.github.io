@@ -207,6 +207,7 @@ span.psw {
   transform: translate(-50%,0);
   margin-bottom: 5rem;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
   overflow: hidden;
 }
 

@@ -4,6 +4,8 @@
 
   <head>
     <title>Imagine Dragons | Unofficial Website</title>
+
+    <!--Linking the css/jquery/fonts-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <link rel="stylesheet" type="text/css" href="css/merch.css">
@@ -15,9 +17,12 @@
 
   <body>
 
+    <!-- Header of the website -->
     <div id="wrapper">
       <header>
         <a href="index.html"><img class="logo" src="assets/logo5.png"></a>
+
+          <!-- The navigation bar -->
           <nav>
           <ul class="nav">
               <li><a href="index.html">HOME</a></li>
@@ -27,6 +32,8 @@
               <li><a href="#" onclick="document.getElementById('loginPopup').style.display='block'">LOGIN</a></li>
             </ul>
           </nav>
+
+          <!-- The navigation bar for mobile/tablet -->
           <div class="topnav">
             <a href="index.html"><img class="mobileLogo" src="assets/logo6.png"></a>
             <div id="myLinks">
@@ -41,6 +48,7 @@
             </a>
           </div>
 
+          <!-- Login pop up window -->
           <div id="loginPopup" class="loginForm">
 
             <form class="loginContent animate">
@@ -76,11 +84,15 @@
       </header>
     </div>
 
+    <!-- Merch container to hold the merchandise -->
     <div id="merchContainer">
       <h1>MERCHANDISE</h1>
 
+      <!-- Placing the products in a unordered list to make dragging
+          and dropping function.-->
       <ul class="products">
 
+        <!-- Each product is in a <li> element -->
         <li>
           <a href="#" class="item1 item"><img src="assets/origins.png">
             <div>
@@ -109,7 +121,16 @@
         </li>
 
         <li>
-          <a href="#" class="item4 item"><img src="assets/smokeandmirrors.jpg">
+          <a href="#" class="item4 item"><img src="assets/evolve.jpg">
+            <div>
+              <p>EVOLVE CD</p>
+              <p>£7.99</p>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="item5 item"><img src="assets/smokeandmirrors.jpg">
             <div>
               <p>SMOKE & MIRRORS DELUXE CD</p>
               <p>£9.99</p>
@@ -118,10 +139,10 @@
         </li>
 
         <li>
-          <a href="#" class="item5 item"><img src="assets/nightvisions.jpg">
+          <a href="#" class="item5 item"><img src="assets/smokeandmirrors.jpg">
             <div>
-              <p>NIGHT VISIONS DELUXE CD</p>
-              <p>£9.99</p>
+              <p>SMOKE & MIRRORS CD</p>
+              <p>£7.99</p>
             </div>
           </a>
         </li>
@@ -138,8 +159,8 @@
         <li>
           <a href="#" class="item5 item"><img src="assets/nightvisions.jpg">
             <div>
-              <p>NIGHT VISIONS DELUXE CD</p>
-              <p>£9.99</p>
+              <p>NIGHT VISIONS CD</p>
+              <p>£7.99</p>
             </div>
           </a>
         </li>
@@ -147,23 +168,15 @@
         <li>
           <a href="#" class="item5 item"><img src="assets/nightvisions.jpg">
             <div>
-              <p>NIGHT VISIONS DELUXE CD</p>
-              <p>£9.99</p>
-            </div>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="item5 item"><img src="assets/nightvisions.jpg">
-            <div>
-              <p>NIGHT VISIONS DELUXE CD</p>
-              <p>£9.99</p>
+              <p>IMAGINE DRAGONS T-SHIRT</p>
+              <p>£24.99</p>
             </div>
           </a>
         </li>
 
     </div>
 
+    <!-- The shopping cart for drag & drop -->
     <div class="basket">
       <h1>SHOPPING BASKET</h2>
       <table id="cartContent" fitColumns="true">
@@ -179,6 +192,7 @@
       <h2>Drop here to add to cart</h2>
     </div>
 
+    <!-- The footer section -->
     <footer id="footer">
 
       <div class="updates">
@@ -198,6 +212,7 @@
         </div>
       </div>
 
+      <!-- Social media in the footer -->
       <div id="socialmedia">
         <a href="https://www.facebook.com/ImagineDragons/?ref=br_rs" target="_blank"><span class="icon"><img src="assets/facebookicon.png"></a></span>
         <a href="https://www.instagram.com/imaginedragons/?hl=en" target="_blank"><span class="icon"><img src="assets/instagramicon.png"></a></span>
@@ -210,6 +225,7 @@
 
   </body>
 
+<!-- Linking to the javascripts -->
 <script src="js/myscripts.js"></script>
 <script src="js/jQueryMain.js"></script>
 

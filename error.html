@@ -4,6 +4,8 @@
 
   <head>
     <title>Imagine Dragons | Unofficial Website</title>
+
+    <!--Linking the css/jquery/fonts-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <link rel="stylesheet" type="text/css" href="css/error.css">
@@ -12,9 +14,12 @@
 
   <body>
 
+    <!-- The header of the website -->
     <div id="wrapper">
       <header>
         <a href="index.html"><img class="logo" src="assets/logo5.png"></a>
+
+          <!-- The navigation bar -->
           <nav>
           <ul class="nav">
               <li><a href="index.html">HOME</a></li>
@@ -24,6 +29,8 @@
               <li><a href="#" onclick="document.getElementById('loginPopup').style.display='block'">LOGIN</a></li>
             </ul>
           </nav>
+
+          <!-- The navigation bar for mobile/tablet -->
           <div class="topnav">
             <a href="index.html"><img class="mobileLogo" src="assets/logo6.png"></a>
             <div id="myLinks">
@@ -38,6 +45,7 @@
             </a>
           </div>
 
+          <!-- Login pop up window -->
           <div id="loginPopup" class="loginForm">
 
             <form class="loginContent animate">
@@ -73,6 +81,7 @@
       </header>
     </div>
 
+    <!-- Div to hold the error message -->
     <div id="errorContainer">
       <h1>ERROR : 404 :(</h1>
       <h2>The page you are looking for has not been developed yet.</h2>
