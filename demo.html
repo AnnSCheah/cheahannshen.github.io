@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <head>
+    <title>Imagine Dragons | Unofficial Website</title>
+
+    <!--Linking the css/jquery/fonts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+
+    <!-- The header of the website -->
+    <div id="wrapper">
+      <header>
+        <a href="index.html"><img class="logo" src="assets/logo5.png"></a>
+
+          <!-- The navigation bar -->
+          <nav>
+          <ul class="nav">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="tour.html">TOUR</a></li>
+              <li><a href="merch.html">MERCH</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="#" onclick="document.getElementById('loginPopup').style.display='block'">LOGIN</a></li>
+            </ul>
+          </nav>
+
+          <!-- The navigation bar for mobile/tablet -->
+          <div class="topnav">
+            <a href="index.html"><img class="mobileLogo" src="assets/logo6.png"></a>
+            <div id="myLinks">
+              <a href="index.html">HOME</a>
+              <a href="tour.html">TOUR</a>
+              <a href="merch.html">MERCH</a>
+              <a href="about.html">ABOUT</a>
+              <a href="#" onclick="document.getElementById('loginPopup').style.display='block'">LOGIN</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="dropDown()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+
+          <!-- Login pop up window -->
+          <div id="loginPopup" class="loginForm">
+
+            <form class="loginContent animate">
+
+              <div class="closeContainer">
+                <span onclick="document.getElementById('loginPopup').style.display='none'" class="closeForm" title="Close Form">&times;</span>
+              </div>
+
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+
+                <span class="register">New user? Register <a href="#">here!</a></span>
+
+              </div>
+
+              <div class="container" style="background-color: #F1F1F1;">
+                <button type="button" onclick="document.getElementById('loginPopup').style.display='none'" class="cancelBtn">Cancel</button>
+                <span class="psw">Forget <a href="#">password?</a></span>
+              </div>
+            </form>
+
+          </div>
+
+      </header>
+    </div>
+
+    <!-- Demonstration video -->
+    <div id="demoContainer">
+      <h1>DEMO</h1>
+      <iframe width="1280" height="720" src="https://www.youtube.com/embed/GILuoSo1j7s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+  </body>
+
+  <script src="js/myscripts.js"></script>
+  </html>
